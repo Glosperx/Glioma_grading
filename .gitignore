@@ -1,0 +1,20 @@
+# The BraTS working copy. Not redistributed; see the README for the expected layout.
+data/
+
+# Model checkpoints and predicted masks produced by notebook 1.
+*.pt
+*.pth
+brats_seg_*/
+
+# Figures written by notebooks 3 and 7.
+figures/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,39 @@
+# Everything the table notebooks (2 to 6) need. They run from data_cache/ with no BraTS copy.
+#
+# On macOS, xgboost must be imported before torch: both ship an OpenMP runtime, and with torch
+# first xgboost segfaults at fit time rather than at import. src/_openmp.py enforces the order.
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
+xgboost>=2.0
+tqdm>=4.65
+jupyter>=1.0
+
+# Figures: fig:shap in notebook 3, fig:segmentation and fig:subregions in notebook 7.
+matplotlib>=3.7
+shap>=0.44
+
+# The foundation-model branch, notebook 5. Only needed to regenerate the embeddings; the caches
+# that ship with the repository are enough to rebuild every table.
+torch>=2.1
+torchvision>=0.16
+transformers>=4.40
+accelerate>=0.28
+open-clip-torch>=2.24
+pillow>=10.0
+huggingface-hub>=0.23
+
+# The segmentation fine-tune, notebook 1. Install separately, it is a git dependency:
+#   pip install "git+https://github.com/bowang-lab/MedSAM2.git"
+
+# ---------------------------------------------------------------------------
+# Versions the reported numbers were last reproduced with. The tables are stable across nearby
+# releases; scikit-learn is the one that matters, since it fixes the cross-validation and the
+# classifier internals.
+#
+#   numpy 2.5.1            pandas 3.0.3           scipy 1.18.0
+#   scikit-learn 1.9.0     xgboost 3.3.0          torch 2.13.0
+#   transformers 5.14.1    open-clip-torch 3.3.0  pillow 12.3.0
+#   tqdm 4.69.0            huggingface-hub 1.24.0
+# ---------------------------------------------------------------------------

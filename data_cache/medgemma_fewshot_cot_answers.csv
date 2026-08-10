@@ -1,0 +1,3322 @@
+case_id,slice_idx,answer
+BraTS20_Training_001,71,"In the left axial T1 post-contrast image, a roughly circular lesion is visible within the brain parenchyma. The right image is a subtraction map showing the contrast enhancement pattern. The lesion appears to have a relatively well-defined border, although some subtle blurring is present. The enhancement pattern is predominantly ring-like, with a central area that is less enhanced than the peripheral rim.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_002,54,"FINDINGS: The left panel shows a T1 post-contrast axial image of a brain lesion. The right panel is a subtraction image, highlighting the contrast uptake within the lesion compared to the surrounding brain tissue. The lesion appears as a roughly circular, well-defined area with a dark central core and a surrounding rim of enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_003,77,"In the LEFT panel, a roughly circular, somewhat irregular mass is visible, appearing darker than the surrounding brain tissue. In the RIGHT panel, the same mass shows a rim of enhancement, which is brighter than the surrounding brain tissue. This enhancement is patchy and not uniformly ring-shaped.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: mild
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_004,84,"FINDINGS: The LEFT panel shows a T1 post-contrast image of a brain lesion. The RIGHT panel is a subtraction image showing the enhancement pattern relative to the T1 signal. The lesion appears as a dark, irregular mass with a surrounding rim of enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_005,95,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, likely representing a mass. In the RIGHT panel, a subtraction map highlights the areas of contrast uptake relative to normal brain tissue. The tumour appears as a region of increased signal intensity on the enhancement map, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_006,89,"In the left panel, a roughly circular lesion is visible, appearing dark grey. The right panel shows the same lesion, but the enhancement map highlights areas of increased signal intensity, indicating contrast uptake. This uptake appears concentrated around the periphery of the lesion, forming a ring-like pattern.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_007,57,"In the left panel, a T1 post-contrast axial image shows a roughly circular lesion with a dark central core and a surrounding lighter rim. In the right panel, the corresponding T1ce minus T1 enhancement map highlights the lesion, showing a bright rim surrounding the dark central core. This indicates that the lesion enhances avidly.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_008,42,"In the left panel, a single, roughly circular lesion is visible within the brain parenchyma. The right panel shows a subtraction map, highlighting the area of contrast uptake relative to the surrounding brain tissue. The lesion appears as a bright, roughly circular area within the brain parenchyma, corresponding to the lesion in the left panel.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_009,67,"FINDINGS: The left panel shows a T1 post-contrast image of a brain lesion. The right panel is a subtraction image showing the enhancement pattern of the lesion. The lesion appears as a roughly circular mass with a central dark area and a surrounding rim of enhancement.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: mild
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_010,87,"In the LEFT panel, a roughly circular lesion is visible, characterized by a central dark area surrounded by a lighter, somewhat irregular rim. The RIGHT panel shows the same lesion, with the enhancement pattern highlighted. The central dark area corresponds to a dark core, while the lighter rim corresponds to the enhancing tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: infiltrative
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_011,84,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, likely representing a mass. The RIGHT panel is a subtraction map highlighting areas of contrast uptake, showing a rim of enhancement surrounding a central region that appears less enhanced.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_012,68,"In the LEFT panel, a T1 post-contrast image, a roughly circular lesion is visible. The lesion appears dark centrally with a surrounding rim of enhancement. In the RIGHT panel, a T1ce minus T1 enhancement map, the enhancing rim is clearly brighter than the surrounding brain tissue, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_013,83,"In the left panel, a T1 post-contrast image, there is a dark, irregular mass located in the left frontal lobe. In the right panel, a T1ce minus T1 enhancement map, the mass shows a rim of enhancement surrounding a central dark area. This pattern is consistent with a glioma.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_014,55,"In the LEFT panel, a T1 post-contrast image shows a mass with a central dark area and a surrounding enhancing rim. In the RIGHT panel, the enhancement map highlights the enhancing rim as bright, contrasting with the dark central area.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <mild>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_015,80,"In the left panel, a T1 post-contrast image shows a roughly circular lesion with a central dark area and a surrounding rim of enhancement. In the right panel, the enhancement map highlights the same lesion, showing a bright rim corresponding to the enhancing tissue, while the central dark area remains dark.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_016,93,"In the LEFT panel, a T1 post-contrast image, a lesion is visible. In the RIGHT panel, a T1ce minus T1 enhancement map, the lesion appears as a bright area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_017,70,"FINDINGS: The left panel shows a T1 post-contrast image of a brain lesion. The right panel is a subtraction image showing the enhancement pattern relative to the T1 signal. The lesion appears as a dark, irregular mass in the left hemisphere.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <mild>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_018,83,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing as a dark area surrounded by a lighter rim. The right T1ce minus T1 enhancement map shows the same lesion as a bright area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_019,55,"In the left panel, a T1 post-contrast image shows a lesion with a dark central core and a surrounding rim of enhancement. In the right panel, the T1ce minus T1 enhancement map highlights the area of enhancement, showing a bright rim around the dark central core. This pattern is consistent with a glioma.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_020,53,"In the left panel, a T1 post-contrast image, there is a lesion visible. In the right panel, a subtraction map showing contrast enhancement, the lesion appears as a bright area compared to the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_021,104,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, appearing slightly brighter than the surrounding brain tissue. In the RIGHT panel, an enhancement map highlights the same region, showing it as slightly brighter than the background grey level.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_022,95,"In the left panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a bright rim. In the right panel, the enhancement map highlights the bright rim surrounding the dark core, indicating contrast uptake in that region. This pattern is characteristic of a glioma.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_023,92,"In the LEFT panel, a roughly circular lesion is visible, appearing slightly darker than the surrounding brain tissue. In the RIGHT panel, the same lesion shows a rim of enhancement, which is brighter than the surrounding brain tissue. This enhancement is relatively uniform around the periphery of the lesion.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_024,97,"In the LEFT panel, a T1 post-contrast image, a round, dark lesion is visible. In the RIGHT panel, a T1ce minus T1 enhancement map, the lesion appears as a ring-shaped enhancement around a dark core, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_025,106,"In the left panel, a T1 post-contrast axial image shows a roughly circular lesion with a dark central core and a surrounding enhancing rim. In the right panel, the T1ce minus T1 enhancement map highlights the same lesion, showing a bright rim corresponding to the enhancing tissue, while the central core remains dark, indicating necrosis.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <high>
+Assessment: <low-grade>"
+BraTS20_Training_026,63,"In the left panel, a T1 post-contrast image shows a roughly circular lesion with a central dark area and a surrounding rim of enhancement. In the right panel, the corresponding T1ce minus T1 enhancement map highlights the area of contrast uptake, showing a similar ring-like enhancement around the central dark region.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_027,69,"In the left panel, a T1 post-contrast image, there is a roughly circular lesion with a dark central area and a surrounding rim of enhancement. The right panel is an enhancement map showing the same lesion, where the enhancement is depicted as bright areas.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_028,49,"In the LEFT panel, a T1 post-contrast image shows a roughly circular lesion with a central dark area surrounded by a ring of enhancement. In the RIGHT panel, the enhancement map highlights the same lesion, showing a bright rim around the central dark area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_029,72,"In the left panel, a T1 post-contrast image, there is a well-defined, roughly circular lesion with a central dark area and a surrounding rim of enhancement. In the right panel, the enhancement map shows the same lesion, with the enhancing rim appearing as a bright region compared to the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_030,95,"In the left panel, a T1 post-contrast image, there are two distinct, roughly circular lesions visible. The right panel is a subtraction map showing the enhancement pattern. The lesions appear as areas of increased signal intensity (bright) compared to the surrounding brain tissue, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_031,103,"In the LEFT panel, a dark, irregular mass is visible within the brain parenchyma. The RIGHT panel shows the same region, highlighting the contrast uptake within the mass. The mass exhibits a distinct rim of enhancement surrounding a central, darker area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_032,126,"In the left axial T1 post-contrast image, there is a region of abnormal signal intensity, appearing slightly brighter than the surrounding brain tissue. In the right T1ce minus T1 enhancement map, this region shows a rim of enhancement, which is brighter than the background grey level of normal brain.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_033,91,"In the LEFT panel, a T1 post-contrast image shows a roughly circular lesion with a central dark area and a surrounding rim of enhancement. In the RIGHT panel, the enhancement map highlights the same lesion, showing a bright rim surrounding a darker central area. This indicates that the lesion is enhancing, likely representing a glioma.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_034,99,"In the LEFT panel, a roughly circular lesion is visible, characterized by a central dark area surrounded by a ring of enhancing tissue. The RIGHT panel shows the same lesion, with the enhancing rim appearing as a bright region compared to the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_035,55,"In the left panel, a T1 post-contrast image shows a region of abnormal signal intensity, appearing darker than the surrounding brain tissue. In the right panel, a subtraction map highlights the area of contrast uptake, showing a rim of enhancement around the darker region. This enhancement is patchy and irregular.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: mild
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_036,84,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing dark grey. In the right T1ce minus T1 enhancement map, the lesion shows a rim of enhancement, appearing brighter than the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_037,71,"In the left panel, a T1 post-contrast image shows a mass with a central dark area and a surrounding enhancing rim. In the right panel, the enhancement map highlights the area of contrast uptake, showing a similar ring-like enhancement around the central dark region.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_038,68,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, appearing darker than the surrounding brain tissue. In the RIGHT panel, a T1ce minus T1 enhancement map highlights the same region, showing areas of increased signal intensity (bright) compared to the normal brain background (grey).
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_039,88,"In the LEFT panel, a large, roughly circular lesion is visible, characterized by a central dark area surrounded by a rim of enhancing tissue. The RIGHT panel shows the same lesion, highlighting the contrast uptake. The enhancing rim appears relatively well-defined, though slightly irregular.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_040,55,"In the LEFT panel, a T1 post-contrast image, there is a well-defined, roughly circular lesion with a dark central core. The surrounding tissue shows a ring of enhancement, which is brighter than the central core. In the RIGHT panel, the enhancement map subtracts the T1 enhancement from the T1 image. The enhancing rim appears as a bright region, clearly above the level of normal brain tissue, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_041,49,"In the left axial T1 post-contrast image, a lesion is visible, appearing as a somewhat irregular, predominantly dark area with some lighter, less defined areas within it. The right image is a contrast enhancement map, showing the same lesion. The lesion appears as a region of increased signal intensity (brighter than the surrounding normal brain tissue), particularly around the periphery, although the central part is darker.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <infiltrative>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_042,84,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular mass with a dark central core. In the RIGHT panel, a T1ce minus T1 enhancement map highlights the tumour region, showing a bright rim surrounding the dark central core. This indicates that the tumour enhances avidly.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_043,57,"In the left panel, a T1 post-contrast image shows a region of abnormal signal intensity, likely representing a mass. In the right panel, a subtraction map highlights the area of contrast uptake relative to the surrounding brain tissue. The tumour appears as a region of increased signal intensity on the subtraction map, indicating enhancement.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_044,90,"In the LEFT panel, a dark, irregular lesion is visible, appearing as a region of low signal intensity. The RIGHT panel shows the same region, with the lesion appearing as a dark area, indicating no contrast uptake above the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <infiltrative>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_045,84,"In the left axial T1 post-contrast image, a large, irregular mass is visible within the brain parenchyma. The right image shows a subtraction map where the enhancement is highlighted in bright areas, contrasting with the darker normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <marked>
+EnhancementMapSignal: <high>
+Assessment: <high-grade>"
+BraTS20_Training_046,54,"In the left panel, a T1 post-contrast image, there is a region of abnormal signal intensity. In the right panel, a subtraction map, this region appears slightly brighter than the surrounding normal brain tissue, indicating some contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_047,74,"In the left panel, a T1 post-contrast image, there is a region of abnormal signal intensity. In the right panel, a T1ce minus T1 enhancement map, this region shows a rim of enhancement surrounding a central area that is less bright than the surrounding brain.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_048,50,"FINDINGS: The left panel shows a T1 post-contrast axial image of a brain lesion. The right panel is a subtraction image showing the enhancement pattern of the lesion. There is a well-defined, round, dark lesion in the left hemisphere, surrounded by a rim of enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_049,87,"In the left panel, a roughly circular lesion is visible, appearing slightly brighter than the surrounding brain tissue. The right panel shows the same lesion, with a rim of enhancement surrounding a central area that is similar in intensity to the brain.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_050,56,"In the LEFT panel, a T1 post-contrast image shows a roughly circular mass with a central dark area and a surrounding rim of enhancement. In the RIGHT panel, the enhancement map highlights the same mass, showing a bright rim surrounding a darker central region. This indicates that the mass is enhancing, likely due to vascularity, and there is a central area that is less vascular or necrotic.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_051,92,"In the left panel, an axial T1 post-contrast image shows a lesion with a central dark area and a surrounding rim of enhancement. In the right panel, the T1 enhancement map highlights the same lesion, showing a bright rim corresponding to the enhancing tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_052,98,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a surrounding enhancing rim. In the RIGHT panel, the enhancement map highlights the same lesion, showing a bright rim surrounding the dark central core. This indicates that the enhancing tissue is brighter than the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_053,88,"In the LEFT panel, a T1 post-contrast image, there is a well-defined, roughly circular mass with a dark central region. The surrounding tissue appears slightly brighter than the adjacent normal brain. In the RIGHT panel, the T1ce minus T1 enhancement map shows the same mass with a bright rim surrounding the dark central region. This bright rim indicates contrast uptake, characteristic of a vascularized lesion.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_054,64,"In the left panel, a T1 post-contrast image, there is a lesion visible. In the right panel, an enhancement map, the lesion shows areas of contrast uptake.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: mild
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_055,67,"FINDINGS: The left panel shows a T1 post-contrast image of a brain lesion. The right panel is a subtraction image showing the enhancement pattern relative to the T1 signal. The lesion appears as a roughly circular, dark area in the left panel, surrounded by a ring of enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_056,88,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing dark grey. The right image shows a contrast enhancement map where the lesion appears as a bright, ring-like structure surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_057,106,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing dark grey. In the right T1ce minus T1 enhancement map, the lesion shows a bright rim surrounding a darker central area. This pattern indicates contrast uptake by the lesion's periphery.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_058,60,"FINDINGS: The left panel shows a T1 post-contrast axial image of a brain lesion. The right panel is a subtraction image showing the enhancement pattern of the lesion. The lesion appears as a somewhat irregular, predominantly dark area on the T1 image, with a slightly brighter rim. The enhancement map shows a rim of increased signal intensity surrounding the dark central area.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: infiltrative
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_059,61,"FINDINGS: The LEFT panel shows an axial T1 post-contrast image of the brain. The RIGHT panel is a subtraction image showing the enhancement difference between the T1ce and T1 images. There is a region of abnormal signal intensity in the left temporal lobe. This region appears slightly brighter than the surrounding brain tissue on the T1ce image and shows a subtle rim of enhancement on the enhancement map. The core of the lesion appears slightly darker than the surrounding brain tissue on the T1ce image.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_060,62,"In the LEFT panel, a dark, irregular mass is visible within the brain parenchyma. The RIGHT panel shows the same region, highlighting the contrast uptake. The mass exhibits a rim of enhancement, appearing brighter than the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_061,69,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a central dark area. In the RIGHT panel, the corresponding enhancement map highlights the lesion, showing a rim of enhancement surrounding the central dark area.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_062,93,"In the left panel, a T1 post-contrast image shows a roughly circular lesion with a dark central area and a surrounding rim of enhancement. The right panel is a subtraction map highlighting the areas of contrast uptake, showing the same lesion with a bright rim surrounding the dark central area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_063,83,"In the LEFT panel, a T1 post-contrast image, there is a region of abnormal signal intensity, appearing slightly darker than the surrounding brain tissue. In the RIGHT panel, a subtraction map, this region shows a rim of enhancement, appearing brighter than the normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_064,63,"In the LEFT panel, a large, irregular mass is visible, predominantly dark grey, with some areas appearing slightly lighter. The RIGHT panel shows the same region, highlighting areas of contrast uptake. There is a rim of enhancement surrounding a central, darker area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_065,68,"FINDINGS: The left panel shows a T1 post-contrast image of a brain lesion. The right panel is a subtraction image showing the enhancement pattern of the lesion. The lesion appears as a somewhat irregular, predominantly hypointense mass with a slightly brighter rim on the T1 image. The enhancement map shows a rim of enhancement surrounding a central area that is less bright than the surrounding brain.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: mild
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_066,90,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing dark grey. The right image is a subtraction map showing the contrast enhancement. The lesion in the right image has a bright rim surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_067,94,"In the left axial T1 post-contrast image, a roughly oval-shaped lesion is visible, appearing mostly hypointense compared to the surrounding brain tissue. In the right T1ce minus T1 enhancement map, the lesion shows a distinct rim of enhancement, which is brighter than the surrounding brain tissue. This enhancement appears somewhat ring-shaped around a central area that is less bright.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_068,74,"In the LEFT panel, a T1 post-contrast image shows a mass with a central dark area and a surrounding rim of enhancement. In the RIGHT panel, the enhancement map highlights the area of contrast uptake, showing a ring-like enhancement around the central dark area.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_069,97,"In the left axial T1 post-contrast image, there is a large, irregular mass centered in the brain, with a dark core and a surrounding enhancing rim. The right T1ce minus T1 enhancement map shows the same mass, with the enhancing rim appearing as a bright region compared to the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_070,114,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing as a dark area surrounded by a lighter rim. The right image is a contrast-to-noise ratio map, where the lesion appears as a bright, ring-like structure, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_071,89,"In the LEFT panel, a T1 post-contrast image shows a roughly oval-shaped lesion with a somewhat irregular border. The lesion appears slightly darker than the surrounding brain tissue on the T1 image. In the RIGHT panel, a T1 enhancement map highlights the area of contrast uptake. The lesion shows a rim of enhancement, particularly around the periphery, with a central area that appears less enhanced or possibly hypointense compared to the surrounding brain.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_072,63,"In the LEFT panel, a T1 post-contrast image, there is a lesion visible. In the RIGHT panel, the T1ce minus T1 enhancement map shows the same lesion with contrast uptake highlighted.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_073,83,"In the LEFT panel, a T1 post-contrast image, there is a well-defined, ring-shaped enhancing lesion. The lesion has a dark central core. In the RIGHT panel, the T1ce minus T1 enhancement map shows the same lesion with a bright rim corresponding to the enhancing tissue. The central core remains dark, indicating necrosis.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_074,88,"In the left panel, a T1 post-contrast image shows a mass with a somewhat irregular shape. In the right panel, a subtraction map highlights the contrast uptake within the mass, revealing a rim of enhancement surrounding a central area that appears less enhanced.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <infiltrative>
+MassEffect: <mild>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_075,76,"In the left axial T1 post-contrast image, a roughly circular mass is visible within the brain parenchyma. The right image is a subtraction map showing the contrast enhancement pattern. The mass exhibits a distinct rim of enhancement, appearing brighter than the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_076,103,"In the LEFT panel, a T1 post-contrast image, there is a region of abnormal signal intensity, appearing darker than the surrounding brain tissue. The RIGHT panel shows a subtraction map, highlighting areas of contrast uptake. The tumour region appears as a dark area on the LEFT panel, surrounded by a rim of enhancement on the RIGHT panel.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_077,69,"In the left axial T1 post-contrast image, a roughly circular lesion is visible within the brain parenchyma. The right image is a subtraction map showing the contrast enhancement pattern. The lesion appears to have a central area that is less bright than the surrounding brain, with a peripheral rim that is significantly brighter than the normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: <avid>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <high>
+Assessment: <low-grade>"
+BraTS20_Training_078,53,"In the left panel, a roughly circular lesion is visible, appearing slightly darker than the surrounding brain tissue. In the right panel, the same lesion shows a rim of enhancement, which is brighter than the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_079,118,"In the left axial T1 post-contrast image, a roughly oval-shaped lesion is visible, appearing slightly hypointense compared to the surrounding brain tissue. In the right T1ce minus T1 enhancement map, the lesion shows a rim of enhancement, with the central portion appearing relatively dark, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_080,67,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a bright rim. In the RIGHT panel, the corresponding T1 enhancement map highlights the same lesion, showing a bright rim surrounding the dark central core. This indicates that the lesion is actively taking up contrast, which is characteristic of a tumour.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_081,97,"In the LEFT panel, a T1 post-contrast image shows two roughly circular lesions with a dark central core and a surrounding rim of slightly brighter tissue. In the RIGHT panel, the corresponding T1ce minus T1 enhancement map highlights the rim of the lesions as significantly brighter than the surrounding normal brain tissue, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_082,72,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing slightly brighter than the surrounding brain tissue. The right image is an enhancement map, showing the same lesion as a bright area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_083,66,"In the left panel, a T1 post-contrast image shows a lesion with a dark central core and a surrounding enhancing rim. In the right panel, the contrast enhancement map highlights the same lesion, showing a bright rim surrounding the dark central core. This indicates that the lesion is enhancing.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_084,54,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing as a bright area compared to the surrounding grey matter. The right image is a subtraction map showing the contrast enhancement. The lesion in the right image is predominantly dark, indicating no significant contrast uptake, although there is a small, slightly brighter rim around the periphery.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_085,100,"In the left panel, a T1 post-contrast image, there is a region of abnormal signal intensity. In the right panel, a T1ce minus T1 enhancement map, this region shows a rim of enhancement surrounding a central area that is similar in signal intensity to the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_086,57,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, likely representing a mass. The RIGHT panel is an enhancement map, highlighting areas that have taken up contrast agent. The enhancement map shows a rim of increased signal intensity surrounding a central area that appears relatively dark compared to the surrounding brain.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_087,68,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, appearing slightly darker than the surrounding brain tissue. In the RIGHT panel, a subtraction map highlights the contrast uptake. The tumour region appears as a bright rim surrounding a darker central area, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_088,67,"In the left axial T1 post-contrast image, there is a roughly circular lesion with a central dark area and a surrounding rim of enhancement. The right image is a subtraction map showing the enhancement difference from the T1 image. The enhancing rim appears bright, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_089,49,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly oval-shaped lesion. The lesion appears predominantly hypointense on the T1 image, with a central area that is slightly brighter than the surrounding brain tissue. The RIGHT panel is a T1ce minus T1 enhancement map, windowed to highlight contrast uptake. The lesion appears as a bright area, indicating contrast uptake, surrounding a darker central region.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_090,79,"In the LEFT panel, a dark, irregular lesion is visible within the brain parenchyma. The RIGHT panel shows the same lesion, with a bright rim surrounding a dark core, indicating contrast uptake. This pattern is consistent with a glioma.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_091,92,"FINDINGS: The left panel shows a T1 post-contrast image of a brain lesion. The right panel is a subtraction image showing the enhancement pattern relative to the T1 signal. The lesion appears as a roughly circular, dark area in the left panel, surrounded by a ring of enhancement in the right panel.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_092,93,"In the left axial T1 post-contrast image, a mass is visible, appearing as a somewhat irregular, predominantly dark lesion. In the right T1ce minus T1 enhancement map, the mass shows patchy areas of increased signal intensity, particularly around the periphery, which are brighter than the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: mild
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_093,67,"In the left panel, a roughly oval-shaped lesion is visible, appearing slightly darker than the surrounding brain tissue. In the right panel, the same lesion is shown, but the enhancement map highlights areas of increased signal intensity, indicating contrast uptake. This uptake appears as a rim around the lesion, suggesting some degree of vascularity.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_094,56,"In the left axial T1 post-contrast image, a roughly circular, dark lesion is visible within the brain parenchyma. The right image is a contrast-to-noise ratio map, highlighting areas of increased signal intensity (bright) compared to the surrounding normal brain tissue (grey).
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_095,94,"In the left panel, a T1 post-contrast image, there is a large, irregularly shaped lesion located in the right frontal lobe. The lesion appears predominantly hypointense on the T1 image, with some areas showing slight hyperintensity. The right panel is a subtraction map showing the enhancement pattern. The lesion demonstrates significant enhancement, particularly around its periphery, creating a ring-like appearance.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_096,76,"FINDINGS: The left panel shows a T1 post-contrast image of a brain lesion. The right panel is a subtraction image highlighting the contrast uptake within the lesion. The lesion appears as a somewhat irregular, predominantly dark area on the T1 image, with a slightly brighter rim. The contrast uptake within the lesion is patchy and not uniform, appearing as areas of increased signal intensity on the subtraction image, particularly around the periphery.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_097,73,"In the LEFT panel, a T1 post-contrast image shows a mass with a central dark area surrounded by a ring of enhancement. In the RIGHT panel, the enhancement map highlights the area of contrast uptake, showing a similar ring-like enhancement around the central dark region.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_098,92,"In the LEFT panel, a T1 post-contrast image, there is a region of abnormal signal intensity, appearing darker than the surrounding brain tissue. In the RIGHT panel, a T1ce minus T1 enhancement map, this region shows a rim of enhancement, appearing brighter than the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_099,52,"FINDINGS: The left panel shows a T1 post-contrast image of the brain, and the right panel shows the corresponding T1 enhancement map. There is a lesion visible in the left temporal lobe. The lesion appears as a somewhat irregular, predominantly hypointense area on the T1 image, with a slightly brighter rim on the enhancement map. The surrounding brain tissue appears normal.
+
+FINAL ANSWER:
+Enhancement: none
+Necrosis: absent
+Margin: infiltrative
+MassEffect: none
+EnhancementMapSignal: low
+Assessment: low-grade"
+BraTS20_Training_100,80,"In the left panel, a large, irregular mass is visible, predominantly dark grey, with some areas appearing slightly lighter. The right panel shows the same region, highlighting areas of contrast uptake. The tumour appears to have a rim of enhancement, particularly around the periphery, with a central area that is less enhanced.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_101,51,"In the left panel, a T1 post-contrast image, there is a well-defined, roughly oval-shaped lesion. The lesion appears dark grey, suggesting it is hypointense on T1-weighted images. In the right panel, the T1 enhancement map shows the lesion as a bright area, indicating contrast uptake. The enhancement appears patchy, with some areas being brighter than others.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_102,97,"In the LEFT panel, a dark, irregular lesion is visible. In the RIGHT panel, the lesion appears as a bright rim surrounding a darker central area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: infiltrative
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_103,64,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing slightly darker than the surrounding brain tissue. In the right T1ce minus T1 enhancement map, the lesion shows a rim of enhancement, which is brighter than the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_104,65,"In the LEFT panel, a T1 post-contrast image shows a roughly circular lesion with a central dark area and a surrounding rim of enhancement. In the RIGHT panel, the T1ce minus T1 enhancement map highlights the area of enhancement, showing a bright rim around the central dark area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_105,50,"In the LEFT panel, a T1 post-contrast image, a well-defined, roughly circular lesion is visible. The lesion appears dark grey, suggesting low signal intensity on the T1-weighted image. In the RIGHT panel, a T1ce minus T1 enhancement map, the lesion shows a distinct rim of enhancement, appearing significantly brighter than the surrounding normal brain tissue. This enhancement pattern is characteristic of a ring-enhancing lesion.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_106,93,"In the left panel, a T1 post-contrast axial image shows a lesion with irregular borders. In the right panel, a T1ce minus T1 enhancement map highlights the area of contrast uptake. The lesion appears as a region of increased signal intensity compared to the surrounding brain tissue, particularly in the periphery.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <infiltrative>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_107,85,"In the LEFT panel, a dark, irregular lesion is visible. In the RIGHT panel, the lesion appears as a bright area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_108,49,"In the LEFT panel, a roughly oval-shaped lesion is visible, appearing as a dark grey area. The RIGHT panel shows the same lesion, but the enhancement map highlights areas of increased signal intensity, indicating contrast uptake. This uptake appears as a bright rim surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_109,75,"FINDINGS: The left panel shows a T1 post-contrast axial image of a brain lesion. The right panel is a subtraction image showing the enhancement pattern of the lesion. The lesion appears as a roughly oval-shaped area with a central dark region and a peripheral rim of enhancement.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_110,115,"In the left axial T1 post-contrast image, a roughly circular, well-defined lesion is visible. The right T1ce minus T1 enhancement map shows the lesion as a bright, ring-like structure surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_111,56,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing as a dark area with a slightly lighter rim. The right image shows a subtraction map where the lesion appears as a bright area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_112,71,"In the LEFT panel, a T1 post-contrast image, there is a roughly circular lesion with a dark central area and a surrounding rim of enhancement. In the RIGHT panel, the T1ce minus T1 enhancement map shows the same lesion, with the enhancing rim appearing as a bright region compared to the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_113,82,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing slightly darker than the surrounding brain tissue. In the right T1ce minus T1 enhancement map, the lesion shows a distinct rim of enhancement, appearing significantly brighter than the normal brain tissue. This enhancement pattern is ring-shaped around a central area that appears relatively dark.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_114,100,"In the left panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a bright rim. In the right panel, the enhancement map highlights the bright rim of the lesion, indicating contrast uptake. This pattern suggests a glioma.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_115,102,"In the LEFT panel, a roughly circular lesion is visible, appearing as a dark grey area within the brain parenchyma. The RIGHT panel shows the same lesion, but the enhancement map highlights the area of contrast uptake. The lesion appears as a bright, somewhat irregular, ring-shaped region surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_116,65,"In the left panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central area and a surrounding rim of enhancement. The enhancement appears relatively homogeneous around the periphery. In the right panel, the T1 enhancement map highlights the same lesion, showing a bright rim corresponding to the enhancing tissue, while the central dark area remains dark, indicating necrosis.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_117,69,"In the LEFT panel, a dark, circular lesion is visible within the brain parenchyma. The RIGHT panel shows the same lesion, with a bright rim surrounding a darker central area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_118,83,"In the LEFT panel, a roughly circular, well-defined lesion is visible. In the RIGHT panel, the lesion shows a rim of enhancement, appearing brighter than the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_119,56,"FINDINGS: The left panel shows a T1 post-contrast image of a brain lesion. The right panel is a subtraction image showing the enhancement pattern of the lesion. The lesion appears as a somewhat irregular, predominantly dark area in the left panel, with a slightly brighter rim in the right panel.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_120,103,"In the left panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a surrounding enhancing rim. In the right panel, the corresponding T1 enhancement map highlights the enhancing rim as bright, contrasting with the dark central core and the normal brain tissue (grey).
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_121,84,"In the LEFT panel, a dark, roughly circular lesion is visible, surrounded by a lighter rim. In the RIGHT panel, the enhancement map shows the lesion as a bright, ring-like structure, with the central part appearing darker than the surrounding enhancement.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_122,85,"In the left panel, a dark, roughly circular lesion is visible, surrounded by a lighter, ring-like area. In the right panel, the enhancement map shows the same lesion, with the ring-like area appearing brighter than the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_123,66,"FINDINGS: The left panel shows a T1 post-contrast image of a brain lesion. The right panel is a subtraction image highlighting the contrast enhancement of the lesion compared to the surrounding brain. The lesion appears as a roughly circular mass with a central dark area and a surrounding rim of enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_124,75,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core. In the RIGHT panel, a T1ce minus T1 enhancement map highlights the lesion, revealing a bright rim surrounding the dark central core. This pattern indicates avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_125,90,"In the left panel, a T1 post-contrast image, there is a lesion visible. In the right panel, a T1ce minus T1 enhancement map, the lesion appears as a region of increased signal intensity compared to the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_126,90,"In the LEFT panel, a dark, irregular lesion is visible, surrounded by a lighter, enhancing rim. In the RIGHT panel, the enhancement map shows the enhancing rim as a bright region, contrasting with the darker, non-enhancing lesion core.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_127,62,"In the LEFT panel, a roughly oval-shaped lesion is visible, appearing as a dark grey area. The RIGHT panel shows the same lesion, with a bright grey rim surrounding a darker central area. This bright rim indicates contrast uptake, characteristic of enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_128,87,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, appearing slightly brighter than the surrounding brain tissue. The RIGHT panel is a subtraction map highlighting areas of contrast uptake, revealing a rim of enhancement surrounding a central area that appears relatively dark compared to the surrounding brain.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_129,60,"In the LEFT panel, a T1 post-contrast image shows a lesion with a somewhat irregular shape and a central area that appears darker than the surrounding tissue. In the RIGHT panel, a subtraction map highlights the contrast uptake. The lesion appears as a region that is brighter than the surrounding normal brain tissue, particularly around the periphery, indicating enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_130,63,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing dark grey. In the right T1ce minus T1 enhancement map, the lesion shows a bright rim surrounding a darker central area. This pattern indicates contrast uptake in the periphery of the lesion.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_131,106,"In the LEFT panel, a T1 post-contrast image, there is a roughly circular lesion visible. The RIGHT panel shows a subtraction map where the lesion appears as a bright area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_132,85,"In the left panel, a T1 post-contrast image shows a roughly circular lesion with a central dark area and a surrounding rim of slightly brighter tissue. The right panel is a subtraction map highlighting areas of contrast uptake. The enhancing rim appears as a bright region, while the central dark area remains dark, indicating contrast is not taken up there.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_133,97,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a bright rim. In the RIGHT panel, the corresponding T1 enhancement map highlights the bright rim of the lesion, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_134,95,"In the left axial T1 post-contrast image, there is a region of abnormal signal intensity, appearing darker than the surrounding brain tissue. The right image is an enhancement map, showing the same region with a brighter signal intensity compared to the normal brain tissue, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_135,90,"In the LEFT panel, a T1 post-contrast image, there is a well-defined, roughly circular lesion with a dark central core and a surrounding rim of enhancement. The RIGHT panel shows the T1ce minus T1 enhancement map, where the enhancing rim appears bright, indicating contrast uptake above normal brain tissue. The central dark core corresponds to the non-enhancing area within the lesion.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_136,101,"In the LEFT panel, a T1 post-contrast image, there is a well-defined, roughly oval-shaped lesion. The lesion appears hypointense on the T1 image, indicating it is likely a cyst or fluid-filled structure. The RIGHT panel is a T1ce minus T1 enhancement map, showing the contrast uptake relative to normal brain tissue. The lesion in the RIGHT panel is also roughly oval-shaped and appears hypointense, indicating no contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_137,65,"In the left panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a surrounding enhancing rim. In the right panel, the corresponding T1 enhancement map highlights the enhancing rim as bright, while the central dark core remains dark, indicating contrast uptake in the periphery of the lesion.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_138,90,"In the left axial T1 post-contrast image, a mass is visible, appearing as a heterogeneous lesion with areas of low signal intensity (dark grey) and areas of higher signal intensity (lighter grey). The right image is a subtraction map showing the enhancement pattern. The enhancing component of the mass appears as a ring-like structure surrounding a central area of low signal intensity.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_139,89,"In the LEFT panel, a T1 post-contrast image shows a roughly circular lesion with a central dark area and a surrounding rim of slightly brighter tissue. In the RIGHT panel, the corresponding T1 enhancement map highlights the same lesion, showing a bright rim surrounding a darker central area. This indicates that the lesion is enhancing, with a ring-like pattern.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_140,111,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, characterized by a dark central area surrounded by a lighter, enhancing rim. The right image is a subtraction map showing the enhancement difference between the T1ce and T1ce images. The enhancing rim appears bright white, indicating contrast uptake above the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_141,104,"In the LEFT panel, a T1 post-contrast image shows a lesion with a somewhat irregular shape. In the RIGHT panel, a subtraction map highlights the area of contrast uptake, revealing a rim of enhancement surrounding a central region that appears less bright.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: mild
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_142,106,"In the LEFT panel, a T1 post-contrast image shows a roughly circular lesion with a central hypointense area and a surrounding ring of enhancement. In the RIGHT panel, the T1ce minus T1 enhancement map highlights the same lesion, showing a bright rim around a darker central area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_143,80,"In the LEFT panel, a large, irregular mass is visible, appearing dark grey. In the RIGHT panel, the same mass shows a rim of enhancement, which is brighter than the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_144,81,"In the LEFT panel, a T1 post-contrast image shows a large, irregularly shaped lesion with a dark central core and a surrounding rim of enhancement. In the RIGHT panel, the T1ce minus T1 enhancement map highlights the area of enhancement, showing a ring-like pattern around the central dark core.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_145,59,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a surrounding rim of enhancement. In the RIGHT panel, the T1ce minus T1 enhancement map highlights the area of enhancement, showing a bright rim around the dark central core. This pattern is characteristic of a contrast-enhancing lesion.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_146,67,"In the LEFT panel, a T1 post-contrast image shows a large, irregular mass centered in the brain. The RIGHT panel is a subtraction map highlighting areas of contrast uptake, revealing a rim of enhancement surrounding a central, darker region.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_147,74,"In the LEFT panel, a T1 post-contrast image, a roughly circular lesion is visible. The lesion appears predominantly dark, suggesting low signal intensity on T1. In the RIGHT panel, a T1ce minus T1 enhancement map, the lesion shows a rim of enhancement surrounding a central area that is less bright than the surrounding brain. This pattern indicates that the enhancing rim is brighter than the central dark area.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_148,58,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing slightly darker than the surrounding brain tissue. In the right T1ce minus T1 enhancement map, the lesion shows a distinct rim of enhancement, appearing significantly brighter than the normal brain tissue. This enhancement pattern is characteristic of a vascularized lesion, often seen in gliomas.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_149,76,"In the left panel, a T1 post-contrast image, a roughly circular lesion is visible. In the right panel, a T1ce minus T1 enhancement map, the lesion appears as a bright, ring-like structure surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_150,76,"The LEFT panel shows a large, roughly circular lesion with a dark, necrotic core. The RIGHT panel displays the same lesion, highlighting the areas that have taken up contrast. The lesion exhibits a thick rim of enhancement surrounding the necrotic core.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_151,94,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a bright rim. In the RIGHT panel, the corresponding T1ce minus T1 enhancement map highlights the enhancing rim of the lesion, which is significantly brighter than the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_152,95,"In the left panel, a dark, circular lesion is visible within the brain parenchyma. In the right panel, the same lesion appears as a bright area, indicating contrast uptake. This suggests the lesion is enhancing.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_153,63,"In the LEFT panel, a round, well-defined lesion is visible. The RIGHT panel shows the contrast uptake for this lesion, revealing a rim of enhancement surrounding a central area that is less bright than the surrounding brain.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_154,105,"In the LEFT panel, a T1 post-contrast image, a large, roughly circular lesion is visible within the brain parenchyma. The lesion appears dark on the T1 image, suggesting it may be necrotic or cystic. The RIGHT panel is a subtraction map showing the enhancement pattern. The lesion exhibits significant enhancement, appearing bright compared to the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_155,65,"In the left panel, a T1 post-contrast image, there is a dark, irregular lesion visible. In the right panel, a T1ce minus T1 enhancement map, the lesion appears as a region of increased signal intensity compared to the surrounding normal brain tissue. This increased signal indicates contrast uptake by the lesion.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_156,69,"In the left panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a surrounding enhancing rim. In the right panel, the T1ce minus T1 enhancement map highlights the enhancing rim as bright, contrasting with the dark central core. This pattern is characteristic of a necrotic glioma.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_157,97,"In the LEFT panel, a large, irregularly shaped lesion is visible, appearing dark grey. The RIGHT panel shows the same lesion, with a bright rim surrounding a darker central area. This bright rim indicates contrast uptake, characteristic of enhancement.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_158,46,"In the left panel, a T1 post-contrast image, there is a region of abnormal signal intensity. In the right panel, a T1ce minus T1 enhancement map, this region shows a rim of enhancement surrounding a central area that is less bright than the surrounding brain.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_159,92,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, likely representing a mass. In the RIGHT panel, a subtraction map highlights the contrast uptake within this region. The abnormal area on the RIGHT panel appears as a bright rim surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <mild>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_160,88,"In the left panel, a T1 post-contrast image, a large, irregular mass is visible within the brain parenchyma. The mass appears predominantly dark grey, suggesting low signal intensity on T1-weighted images. In the right panel, a subtraction image showing the enhancement map, the mass is highlighted in bright signal intensity, indicating contrast uptake. This bright signal corresponds to the enhancing rim surrounding a darker core.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <mild>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_161,90,"In the left panel, a large, irregularly shaped lesion is visible, appearing dark grey. The right panel shows the same lesion, with a bright rim surrounding a darker central area. This bright rim indicates contrast uptake, characteristic of enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_162,91,"In the LEFT panel, a roughly circular lesion is visible, appearing as a dark area compared to the surrounding brain tissue. In the RIGHT panel, the same lesion is shown, but the enhancement map highlights areas that have taken up contrast. The lesion appears as a bright, ring-like structure surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_163,86,"In the left panel, a T1 post-contrast image, there is a well-defined, roughly circular mass with a dark central core and a surrounding rim of enhancement. The enhancement appears relatively homogeneous around the periphery. In the right panel, the enhancement map shows the same mass, with the enhancing rim appearing as a bright region compared to the surrounding normal brain tissue, which is depicted in grey.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_164,94,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly oval-shaped mass with a dark central core and a surrounding rim of enhancement. In the RIGHT panel, a T1ce minus T1 enhancement map highlights the same mass, showing a bright rim corresponding to the enhancing tissue, while the central dark core remains dark, indicating necrosis.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_165,59,"In the left axial T1 post-contrast image, a well-circumscribed, roughly circular mass is visible, appearing slightly hyperintense compared to the surrounding brain tissue. In the right T1ce minus T1 enhancement map, the mass shows a distinct rim of enhancement, which is significantly brighter than the background brain tissue. This enhancement pattern is characteristic of a ring-like enhancement around a central non-enhancing area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_166,73,"In the left panel, a large, dark, irregularly shaped lesion is visible, surrounded by a bright rim. The right panel shows the same lesion, with the enhancement map highlighting the area of contrast uptake. The bright rim corresponds to the enhancing tissue surrounding the dark core.
+
+FINAL ANSWER:
+Enhancement: <avid>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <marked>
+EnhancementMapSignal: <high>
+Assessment: <high-grade>"
+BraTS20_Training_167,67,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, appearing darker than the surrounding brain tissue. In the RIGHT panel, a subtraction map highlights the area of contrast uptake, revealing a rim of enhancement surrounding a central area that is similar in signal intensity to the brain. This pattern suggests a tumour with some degree of vascularity.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_168,92,"In the LEFT panel, a large, roughly circular lesion is visible, appearing dark grey. The RIGHT panel shows the same lesion, but the enhancement map highlights areas of increased signal intensity, indicating contrast uptake. This uptake is primarily concentrated in a rim-like fashion around the periphery of the lesion, with a relatively dark central core.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_169,48,"In the left axial T1 post-contrast image, a roughly circular mass is visible within the brain parenchyma. The right image is a subtraction map showing the contrast enhancement pattern. The mass exhibits a distinct rim of enhancement, appearing brighter than the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_170,56,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a central dark area. In the RIGHT panel, a T1ce minus T1 enhancement map highlights the lesion, revealing a rim of enhancement surrounding the central dark area. This enhancement is patchy and not uniformly ring-shaped.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_171,93,"In the left axial T1 post-contrast image, a large, roundish mass is visible within the brain parenchyma. The right axial T1ce minus T1 enhancement map highlights the areas of contrast uptake relative to the surrounding brain tissue. The tumour appears as a bright, somewhat ring-shaped region, with a darker central area.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_172,105,"In the LEFT panel, a T1 post-contrast image, a roughly circular lesion is visible within the brain parenchyma. The lesion appears slightly darker than the surrounding brain tissue. In the RIGHT panel, a T1ce minus T1 enhancement map, the lesion shows a rim of enhancement, which is brighter than the surrounding brain tissue. This enhancement is relatively uniform around the periphery of the lesion.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_173,87,"In the left panel, a large, well-defined, cystic lesion is visible, with a thick, enhancing rim surrounding a dark, necrotic core. In the right panel, the enhancement map shows the enhancing rim is bright, indicating avid enhancement, while the necrotic core remains dark.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_174,91,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a surrounding enhancing rim. In the RIGHT panel, the corresponding T1 enhancement map highlights the enhancing rim as bright, contrasting with the dark central core and the normal brain tissue (grey).
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_175,73,"In the left panel, a T1 post-contrast image shows a large, irregularly shaped lesion with a predominantly dark, necrotic core. There are several smaller, darker foci within the lesion. The surrounding enhancing tissue appears heterogeneous in signal intensity. In the right panel, a T1ce minus T1 enhancement map highlights the areas of contrast uptake. The enhancing rim around the necrotic core is relatively bright, indicating avid enhancement. The smaller foci within the lesion also show enhancement. The overall enhancement pattern is patchy and irregular.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_176,109,"In the LEFT panel, a T1 post-contrast image, there is a large, irregular mass centered in the brain. The RIGHT panel shows a subtraction map where the contrast enhancement is subtracted from the T1 image. The enhancing component of the mass appears as a bright rim surrounding a darker, non-enhancing core.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_177,56,"In the left axial T1 post-contrast image, there is a somewhat ill-defined, roughly circular lesion present. In the right T1ce minus T1 enhancement map, the lesion appears as a region that is slightly brighter than the surrounding normal brain tissue, but not significantly so.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <infiltrative>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_178,84,"In the left panel, a T1 post-contrast image shows a large, roughly circular mass with a central dark area and a surrounding lighter, irregular rim. In the right panel, a T1ce minus T1 enhancement map highlights the same mass, showing a bright rim surrounding the central dark area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_179,67,"The LEFT panel shows a T1 post-contrast axial image of a brain lesion. The RIGHT panel is a subtraction map highlighting the contrast enhancement relative to the surrounding brain tissue. The lesion appears as a large, roughly circular area with a central dark region and a surrounding rim of brighter tissue.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_180,55,"In the LEFT panel, a roughly circular lesion is visible, appearing as a dark area within the brain parenchyma. The RIGHT panel shows the same lesion, but with a superimposed map indicating contrast uptake. The lesion appears as a bright area, suggesting contrast enhancement, with a slightly darker central region.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_181,74,"In the left axial T1 post-contrast image, a dark, irregular lesion is visible within the brain parenchyma. The right T1ce minus T1 enhancement map shows the same lesion with a bright rim surrounding a darker central area. This bright rim indicates contrast uptake, characteristic of a tumour.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: infiltrative
+MassEffect: mild
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_182,89,"In the left panel, a T1 post-contrast image, there is a well-defined, roughly oval-shaped lesion located in the right temporal lobe. The lesion appears slightly brighter than the surrounding brain tissue. In the right panel, the T1 enhancement map shows the same lesion with a rim of enhancement surrounding a darker central area. This enhancement is patchy and not uniformly bright.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_183,67,"In the left panel, a large, irregular mass is visible, predominantly dark grey, with some lighter grey areas within it. The right panel shows the same region, highlighting the contrast uptake. The mass exhibits significant enhancement, appearing much brighter than the surrounding normal brain tissue, particularly around its periphery.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_184,74,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing as a dark, low-signal area within the brain parenchyma. The right image is a contrast-enhanced T1 map, showing the same lesion as a bright, ring-like structure surrounding a darker central area. This indicates that the lesion is actively taking up contrast, which is characteristic of a vascularized tumour.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_185,49,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular mass with a dark central region. In the RIGHT panel, a T1ce minus T1 enhancement map highlights the tumour, showing a bright rim surrounding the dark central region. This indicates that the tumour is actively taking up contrast.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_186,79,"In the left axial T1 post-contrast image, a large, irregular mass is visible in the left frontal lobe. The right T1ce minus T1 enhancement map shows the same mass with a rim of enhancement surrounding a central area that is less bright than the surrounding brain.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_187,85,"In the LEFT panel, a T1 post-contrast image shows a large, irregular mass centered in the left temporal lobe, with some surrounding edema. In the RIGHT panel, the corresponding T1 enhancement map highlights the tumor, showing a rim of enhancement around a central area that is less bright.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <infiltrative>
+MassEffect: <mild>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_188,63,"In the LEFT panel, a T1 post-contrast image shows a roughly circular lesion with a dark central area and a surrounding rim of enhancement. In the RIGHT panel, the corresponding T1 enhancement map highlights the same lesion, showing a bright rim surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_189,109,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing as a dark, non-enhancing area surrounded by a lighter, slightly irregular rim. In the right T1ce minus T1 enhancement map, the lesion appears as a dark, non-enhancing area, similar to the left image.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_190,72,"In the left panel, a T1 post-contrast image shows a large, irregular mass with a central dark area. The right panel is a subtraction map highlighting areas of contrast uptake. The enhancing rim around the central dark area is visible on the right panel, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_191,87,"In the LEFT panel, a large, irregularly shaped lesion is visible, appearing mostly dark grey. The RIGHT panel shows the same lesion, with a bright rim of enhancement surrounding a darker central area. This enhancement pattern is characteristic of a glioma.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_192,88,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing as a relatively homogeneous, slightly hyperintense area compared to the surrounding brain tissue. In the right T1ce minus T1 enhancement map, the lesion appears as a dark, non-enhancing area, similar in intensity to the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_193,91,"In the left axial T1 post-contrast image, there is a well-defined, roughly circular mass with a central dark area, surrounded by a rim of enhancement. The right image is a subtraction map showing the enhancement difference from the T1 image. The enhancing rim appears bright, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_194,63,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a surrounding rim of enhancement. In the RIGHT panel, the enhancement map highlights the same lesion, showing a bright rim surrounding the dark central core. This indicates that the enhancing tissue is brighter than the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_195,45,"In the left panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a surrounding rim of enhancement. In the right panel, the corresponding T1 enhancement map highlights the area of enhancement, showing a bright rim around the dark central core.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <high>
+Assessment: <low-grade>"
+BraTS20_Training_196,73,"FINDINGS: The left panel shows an axial T1 post-contrast image of the brain. The right panel is a subtraction image showing the enhancement difference between the T1ce and T1 images. There is a region of abnormal signal intensity in the left hemisphere. This region appears to have a somewhat irregular border and a central area that is darker than the surrounding abnormal tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <mild>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_197,83,"In the left panel, a T1 post-contrast image, there is a central dark area surrounded by a ring of enhancement. In the right panel, the enhancement map shows the same region as bright, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_198,64,"In the left panel, a roughly circular lesion is visible, appearing dark grey. The right panel shows the same lesion, but the enhancement map highlights a rim of increased signal intensity around the lesion, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_199,99,"In the LEFT panel, a T1 post-contrast image, there is a region of abnormal signal intensity. In the RIGHT panel, a T1 enhancement map, this region shows a rim of enhancement surrounding a central area that is less bright than the surrounding brain.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_200,50,"In the LEFT panel, a T1 post-contrast image, a roughly circular lesion is visible. The lesion appears slightly darker than the surrounding brain tissue, suggesting it might be hypointense on T1. In the RIGHT panel, a T1ce minus T1 enhancement map, the lesion shows a rim of enhancement, appearing brighter than the surrounding brain tissue. This enhancement is relatively uniform around the periphery of the lesion.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_201,81,"In the left panel, a T1 post-contrast image shows a well-defined, roughly oval-shaped lesion with a dark central core. The right panel is a subtraction image, highlighting the areas of contrast uptake relative to the surrounding brain tissue. The lesion appears to have a bright rim surrounding the dark central core, indicating enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_202,62,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly oval-shaped lesion with a dark central core and a surrounding rim of enhancement. In the RIGHT panel, the corresponding T1 enhancement map highlights the same lesion, showing a bright rim surrounding the dark central core. This indicates that the enhancing tissue is brighter than the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_203,73,"In the LEFT panel, a roughly circular lesion is visible in the left frontal lobe. The RIGHT panel shows the same lesion, highlighting areas of contrast uptake. The lesion appears to have a relatively distinct border.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_204,59,"In the LEFT panel, a T1 post-contrast image, a roughly oval-shaped lesion is visible. The lesion appears predominantly hypointense on this image, suggesting it might be a cyst or necrotic tissue. The RIGHT panel shows a subtraction map where the enhancement is highlighted in bright areas. The lesion in the LEFT panel corresponds to a region that is bright in the RIGHT panel, indicating that this area enhances.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_205,91,"In the LEFT panel, a roughly circular lesion is visible, appearing dark grey. In the RIGHT panel, the same lesion shows a rim of enhancement, appearing brighter than the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_206,63,"In the left axial T1 post-contrast image, a roughly circular, somewhat irregular mass is visible in the left temporal lobe. The right image shows the enhancement map, where the mass appears as a bright, ring-like structure surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_207,94,"In the LEFT panel, a large, round, well-defined lesion is visible. In the RIGHT panel, the lesion appears as a bright, ring-like structure surrounding a darker central area. This enhancement pattern is characteristic of a glioma.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_208,90,"In the LEFT panel, a T1 post-contrast image shows a mass with a central dark area surrounded by a rim of enhancement. In the RIGHT panel, the enhancement map highlights the area of contrast uptake, showing a similar ring-like enhancement around the central dark region.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_209,56,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a surrounding rim of enhancement. In the RIGHT panel, the enhancement map highlights the same lesion, showing a bright rim surrounding the dark central core. This pattern indicates avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_210,88,"In the left axial T1 post-contrast image, a large, irregularly shaped lesion is visible, predominantly dark grey, with some areas appearing slightly lighter. The right image shows a subtraction map where the lesion appears as a bright, ring-like structure surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <mild>
+EnhancementMapSignal: <high>
+Assessment: <low-grade>"
+BraTS20_Training_211,56,"In the left panel, a T1 post-contrast image shows a large, irregular mass centered in the brain. The mass has a dark, necrotic core surrounded by a ring of enhancement. In the right panel, the T1ce minus T1 enhancement map highlights the area of enhancement. The enhancing rim is clearly brighter than the surrounding brain tissue, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_212,102,"In the left panel, a T1 post-contrast axial image shows a mass with a central dark area surrounded by a ring of enhancement. In the right panel, the T1ce minus T1 enhancement map highlights the area of enhancement, showing a bright rim around the central dark area. This pattern is characteristic of a glioma.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_213,53,"In the LEFT panel, a T1 post-contrast axial image shows a mass with a central dark area surrounded by a ring of enhancement. In the RIGHT panel, the T1ce minus T1 enhancement map highlights the same mass, showing a bright rim corresponding to the enhancing tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_214,71,"In the left panel, a T1 post-contrast axial image shows a lesion with a central dark area surrounded by a ring of enhancement. In the right panel, the T1ce minus T1 enhancement map highlights the area of enhancement, showing a bright rim around the dark central core. This pattern is characteristic of a necrotic glioma.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_215,59,"In the LEFT panel, a roughly circular, dark lesion is visible, surrounded by normal brain tissue. In the RIGHT panel, the lesion appears as a bright area, indicating contrast uptake, with a darker central region.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <mild>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_216,84,"In the left axial T1 post-contrast image, a mass is visible, appearing as a somewhat irregular, dark lesion with some brighter areas within it. In the right T1ce minus T1 enhancement map, the mass appears as a region of increased signal intensity compared to the surrounding normal brain tissue, with a darker central area.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: intermediate
+Assessment: high-grade"
+BraTS20_Training_217,52,"In the LEFT panel, a T1 post-contrast image shows a somewhat ill-defined, irregular mass with a central dark area. In the RIGHT panel, the corresponding enhancement map highlights the area of contrast uptake. The mass appears to have a rim of enhancement surrounding a central dark region, suggesting necrosis.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_218,66,"In the LEFT panel, a T1 post-contrast image shows a large, irregularly shaped mass with a predominantly dark central region. The RIGHT panel is a subtraction map highlighting areas of contrast uptake above normal brain tissue. The tumour appears to have a rim of enhancement, particularly around the periphery, with a darker central area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_219,72,"In the LEFT panel, a T1 post-contrast image shows a lesion with a somewhat irregular shape. The RIGHT panel is a subtraction map highlighting areas of contrast uptake, revealing a rim of enhancement surrounding a central region that appears less bright.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: mild
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_220,87,"In the left panel, a T1 post-contrast image shows a mass with a somewhat irregular shape, predominantly located in the right frontal lobe. The right panel is a subtraction image highlighting areas of contrast uptake. The mass appears to have a rim of enhancement, suggesting it is taking up contrast.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_221,70,"In the left panel, a T1 post-contrast image, there is a well-defined, roughly circular lesion located in the right frontal lobe. The lesion appears slightly hyperintense compared to the surrounding brain tissue on the T1 image. In the right panel, the T1 enhancement map, the lesion shows patchy areas of enhancement, primarily around the periphery, with a relatively dark central region.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_222,107,"In the left panel, a roughly circular, hypointense lesion is visible within the brain parenchyma. In the right panel, the same lesion appears as a bright region, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_223,90,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core and a surrounding enhancing rim. In the RIGHT panel, the corresponding enhancement map highlights the enhancing rim as bright, contrasting with the dark central core and the normal brain tissue (grey).
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_224,78,"In the LEFT panel, a T1 post-contrast image shows a roughly circular lesion with a central dark area and a surrounding rim of enhancement. In the RIGHT panel, the T1ce minus T1 enhancement map highlights the same lesion, showing a bright rim corresponding to the enhancing tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_225,93,"In the LEFT panel, a T1 post-contrast image, a large, irregular mass is visible within the brain parenchyma. The RIGHT panel shows a subtraction map where the enhancement is highlighted in bright areas, contrasting with the normal brain tissue which appears dark.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <infiltrative>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_226,59,"In the left axial T1 post-contrast image, a large, irregular mass is visible, predominantly dark grey, with some areas appearing slightly lighter. In the right T1ce minus T1 enhancement map, the mass appears as a bright, irregular region, with a darker central area. This bright region represents areas of contrast uptake, indicating enhancement.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_227,68,"In the left axial T1 post-contrast image, a linear lesion is visible extending along the midline, slightly to the left. The right T1ce minus T1 enhancement map shows the same linear lesion with a bright rim, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_228,63,"In the left panel, a T1 post-contrast image shows a region of abnormal signal intensity, likely representing a mass. In the right panel, a subtraction map highlights the area of contrast uptake, revealing a rim of enhancement surrounding a central region that appears less intense.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_229,100,"In the left panel, a T1 post-contrast image, a roughly circular lesion is visible. The lesion appears predominantly dark grey, suggesting low signal intensity on T1. The right panel shows a subtraction map where the lesion appears as a bright, ring-like structure surrounding a darker central area. This indicates that the lesion enhances significantly with contrast, particularly at the periphery.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_230,99,"FINDINGS: The left panel shows a T1 post-contrast image of a brain lesion. The right panel is a subtraction image showing the enhancement pattern of the lesion. The lesion appears as a roughly oval-shaped mass with a relatively well-defined border. The enhancement pattern is patchy, with areas of increased signal intensity (bright) surrounding a central area that is less bright.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_231,91,"In the left axial T1 post-contrast image, a roughly circular, dark lesion is visible within the brain parenchyma. The right T1ce minus T1 enhancement map shows the same lesion with a bright rim surrounding a darker central area. This bright rim indicates contrast uptake, characteristic of a glioma.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_232,63,"In the LEFT panel, a T1 post-contrast image, there is a region of abnormal signal intensity, appearing darker than the surrounding brain tissue. In the RIGHT panel, a subtraction map, this region shows some areas that are brighter than the background, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_233,88,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, likely representing a mass. In the RIGHT panel, a subtraction map highlights the contrast uptake within this region. The abnormal area on the RIGHT panel appears as a bright rim surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_234,62,"In the LEFT panel, a large, roughly oval-shaped lesion is visible. The lesion appears predominantly dark grey, suggesting low signal intensity on T1-weighted images. The RIGHT panel shows the same lesion, but with a map indicating contrast enhancement. The lesion exhibits a distinct rim of enhancement, appearing significantly brighter than the surrounding normal brain tissue, which is represented by the grey level. This enhancement pattern is characteristic of a vascularized tumour.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_235,92,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular mass with a central dark area. In the RIGHT panel, the corresponding T1ce minus T1 enhancement map highlights the mass, showing a rim of enhancement surrounding the central dark area.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_236,51,"In the left axial T1 post-contrast image, a large, irregular mass is visible, predominantly dark grey, with some areas appearing slightly lighter. The right image shows the same region, but the enhancement map highlights areas of increased signal intensity, indicating contrast uptake. This uptake is primarily concentrated along the periphery of the mass, forming a ring-like enhancement around a central, darker region.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_237,74,"In the LEFT panel, a large, roughly circular lesion is visible, appearing hypointense on the T1 post-contrast sequence. The RIGHT panel shows the same lesion, with a clear rim of enhancement surrounding a central area that is less bright, suggesting necrosis.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_238,62,"In the LEFT panel, a large, roughly circular lesion is visible, appearing predominantly white. In the RIGHT panel, the same lesion is shown, but the enhancement map highlights areas of increased signal intensity, indicating contrast uptake. This uptake is primarily concentrated in a rim-like fashion around the periphery of the lesion, with the central portion appearing relatively dark.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_239,96,"In the left panel, a T1 post-contrast image shows a region of abnormal signal intensity, likely representing a mass. In the right panel, a subtraction map highlights the areas of contrast uptake relative to the surrounding brain tissue. The tumour appears as a region of increased signal intensity on the subtraction map, indicating enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_240,73,"In the left axial T1 post-contrast image, there is a region of abnormal signal intensity, appearing slightly darker than the surrounding brain tissue. The right T1ce minus T1 enhancement map shows this region as having very little to no contrast uptake, appearing similar in intensity to the normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_241,94,"In the left panel, a large, irregularly shaped lesion is visible, predominantly dark grey, with some areas appearing slightly lighter. The right panel shows the same lesion, but the enhancement is clearly visible as a bright rim surrounding a darker central area. This bright rim corresponds to the enhancing tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_242,48,"In the LEFT panel, a T1 post-contrast image, a region of abnormal signal intensity is visible. In the RIGHT panel, a subtraction map showing contrast enhancement, the same region appears as a bright area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_243,67,"In the left panel, a T1 post-contrast axial image shows a roughly circular lesion with a central dark area and a surrounding rim of enhancement. In the right panel, the corresponding T1ce minus T1 enhancement map highlights the area of contrast uptake, showing a ring-like enhancement around the central dark region.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_244,69,"In the left axial T1 post-contrast image, a large, irregular mass is visible, predominantly dark grey, with some areas appearing slightly lighter. The right T1ce minus T1 enhancement map highlights the areas of contrast uptake. The tumour appears to have a somewhat irregular border, and there is a noticeable area within the tumour that is significantly brighter than the surrounding brain tissue, suggesting contrast uptake.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_245,62,"FINDINGS: The LEFT panel shows a large, round, well-defined mass centered in the left temporal lobe. The RIGHT panel displays the same region, highlighting the contrast uptake. The mass shows a clear rim of enhancement, indicating avid enhancement. There is a dark central area, suggesting necrosis. The surrounding enhancing tissue appears relatively uniform.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_246,65,"In the LEFT panel, a roughly circular lesion is visible, appearing as a dark area compared to the surrounding brain tissue. The RIGHT panel shows the same lesion, but the enhancement map highlights areas of increased signal intensity, indicating contrast uptake. This uptake appears as a bright rim surrounding a darker central region.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_247,70,"In the left panel, a large, irregularly shaped lesion is visible, appearing dark grey. The right panel shows the same lesion, with a bright rim surrounding a darker central area. This bright rim indicates contrast uptake, characteristic of enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_248,89,"In the left axial T1 post-contrast image, a roughly oval-shaped lesion is visible, appearing as a dark area compared to the surrounding brain tissue. In the right T1ce minus T1 enhancement map, the lesion shows a distinct rim of enhancement, appearing significantly brighter than the normal brain tissue, particularly around the periphery.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_249,51,"In the left panel, a large, roughly circular lesion is visible, appearing as a dark, hypointense area. The right panel shows the same lesion, but the enhancement map highlights the area of contrast uptake. The lesion appears as a bright, ring-like structure surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <high>
+Assessment: <low-grade>"
+BraTS20_Training_250,51,"In the left panel, a T1 post-contrast image, there is a region of abnormal signal intensity, appearing slightly darker than the surrounding brain tissue. In the right panel, the corresponding T1 enhancement map shows this region as having significantly increased signal intensity compared to the normal brain tissue, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_251,87,"In the LEFT panel, a T1 post-contrast image, a roughly circular lesion is visible. The lesion appears predominantly dark grey, suggesting low signal intensity on the T1-weighted image, and has a somewhat irregular border. In the RIGHT panel, a subtraction map highlighting contrast uptake, the lesion shows a bright rim surrounding a darker central area. This pattern indicates avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_252,76,"In the LEFT T1ce image, a mass is visible, appearing as a dark, somewhat irregular region. In the RIGHT enhancement map, the mass shows some areas that are brighter than the surrounding normal brain tissue, indicating enhancement.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_253,60,"In the LEFT panel, a T1 post-contrast axial image shows a roughly circular lesion with a dark central area and a surrounding rim of enhancement. In the RIGHT panel, the corresponding T1ce minus T1 enhancement map highlights the area of contrast uptake, showing a bright rim around the dark central area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_254,92,"In the left panel, a large, roughly circular lesion is visible, appearing dark grey. The right panel shows the same lesion, but the enhancement map highlights areas of increased signal intensity, indicating contrast uptake. This uptake is primarily concentrated in a ring-like pattern around the periphery of the lesion, with a relatively dark central core.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_255,65,"In the LEFT panel, a T1 post-contrast image shows a large, irregular mass with a predominantly dark, necrotic core. The enhancing rim is irregular and somewhat patchy, particularly along the superior and inferior margins. In the RIGHT panel, the enhancement map highlights the areas of contrast uptake. The enhancing rim appears patchy and irregular, with some areas of higher signal intensity than others, suggesting variable vascularity or enhancement pattern.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_256,71,"In the left panel, a T1 post-contrast axial image shows a region of abnormal signal intensity, likely representing a mass. The right panel is a subtraction map highlighting areas of contrast uptake, showing a bright rim around a darker central region.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <mild>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_257,84,"In the LEFT panel, a T1 post-contrast axial image shows a well-defined, roughly circular lesion with a central dark area. In the RIGHT panel, a T1ce minus T1 enhancement map highlights the lesion, showing a bright rim surrounding the central dark area. This indicates contrast uptake in the periphery of the lesion.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_258,81,"The LEFT panel shows a T1 post-contrast axial image of a brain lesion. The RIGHT panel is a subtraction image, highlighting the contrast uptake within the lesion compared to the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <marked>
+EnhancementMapSignal: <high>
+Assessment: <high-grade>"
+BraTS20_Training_259,95,"In the left panel, a T1 post-contrast image, there is a region of abnormal signal intensity. In the right panel, an enhancement map, this region shows a rim of enhancement surrounding a central area that is less bright than the surrounding brain.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_260,56,"In the LEFT panel, a dark, irregular lesion is visible within the brain parenchyma. In the RIGHT panel, the same lesion appears as a bright area, indicating contrast uptake. This suggests the lesion is enhancing.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_261,86,"In the LEFT panel, a T1 post-contrast image shows a large, irregular mass with a central dark area. In the RIGHT panel, a subtraction map highlights the contrast uptake, revealing a rim of enhancement surrounding the central dark area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_262,73,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, likely representing a mass. The RIGHT panel is a subtraction map highlighting areas of contrast uptake, showing a rim of enhancement around the lesion.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_263,118,"In the LEFT panel, a T1 post-contrast image, a region of abnormal signal intensity is visible. In the RIGHT panel, a subtraction map showing contrast enhancement, this region appears as a bright area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_264,71,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, appearing darker than the surrounding brain tissue. In the RIGHT panel, an enhancement map highlights the same region, showing areas of increased signal intensity (bright) compared to the normal brain background (grey). This increased signal indicates contrast uptake by the abnormal tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_265,92,"In the LEFT panel, a roughly oval-shaped lesion is visible, appearing darker than the surrounding brain tissue. The RIGHT panel shows the same lesion, with a bright rim surrounding a darker central area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_266,100,"In the LEFT panel, a T1 post-contrast image shows a roughly circular lesion with a central dark area and a surrounding rim of enhancement. In the RIGHT panel, the enhancement map highlights the same lesion, showing a bright rim surrounding the dark central area.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <high>
+Assessment: <low-grade>"
+BraTS20_Training_267,57,"In the LEFT panel, a T1 post-contrast image, a region of abnormal signal intensity is visible. In the RIGHT panel, a T1ce minus T1 enhancement map, this region shows a rim of enhancement surrounding a central area that is less bright than the surrounding brain.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_268,58,"In the LEFT panel, a large, irregular mass is visible, appearing mostly dark grey, suggesting low signal intensity on T1-weighted images. The RIGHT panel shows the same region, with a map indicating areas of contrast uptake. The tumour appears to have a rim of enhancement, which is brighter than the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_269,91,"In the LEFT panel, a region of abnormal signal intensity is visible, appearing slightly darker than the surrounding brain tissue. In the RIGHT panel, this region shows some enhancement, appearing slightly brighter than the background brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_270,85,"In the left panel, a large, irregularly shaped mass is visible, predominantly dark grey, with some areas appearing slightly lighter. The right panel shows the same region, highlighting the contrast uptake. The mass exhibits a prominent rim of enhancement, appearing significantly brighter than the surrounding brain tissue, particularly around the periphery.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_271,77,"In the LEFT panel, a T1 post-contrast image shows a large, irregular mass with a central dark area. In the RIGHT panel, a T1ce minus T1 enhancement map highlights the tumour region, which appears as a bright, ring-like structure surrounding a darker core. This pattern indicates avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_272,63,"In the LEFT panel, a T1 post-contrast image shows a roughly circular lesion with a central dark area and a surrounding rim of enhancement. In the RIGHT panel, the T1ce minus T1 enhancement map highlights the area of enhancement, showing a bright rim around the central dark area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_273,69,"FINDINGS: The left panel shows a T1 post-contrast image of the brain, revealing a lesion in the right frontal lobe. The right panel is a subtraction image, highlighting the contrast uptake within the lesion compared to the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_274,90,"In the left panel, a T1 post-contrast image, there is a large, irregular mass centered in the image. The mass appears predominantly dark grey, suggesting low signal intensity on T1. The right panel is a subtraction map showing the enhancement pattern. The enhancing component of the mass is predominantly bright, forming a ring-like structure around a darker, non-enhancing core. This pattern is characteristic of a ring-enhancing lesion.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_275,54,"In the left panel, a T1 post-contrast image, there is a region of abnormal signal intensity. In the right panel, a subtraction map, this region shows a rim of enhancement, indicating increased vascularity compared to the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: <avid>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <high>
+Assessment: <high-grade>"
+BraTS20_Training_276,100,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, appearing slightly brighter than the surrounding brain tissue. The RIGHT panel is a subtraction map highlighting areas of contrast uptake. The tumour region appears as a slightly brighter area compared to the normal brain tissue, indicating some contrast uptake.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_277,69,"In the LEFT panel, a T1 post-contrast image shows a rounded lesion in the right frontal lobe. In the RIGHT panel, a T1ce minus T1 enhancement map highlights the lesion, showing a rim of enhancement around a central area that is less bright than the surrounding brain.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_278,84,"In the left panel, a T1 post-contrast image shows a region of abnormal signal intensity, likely representing a brain lesion. The right panel is a subtraction map, highlighting areas of contrast uptake relative to the surrounding brain tissue. The lesion appears as a somewhat irregular, predominantly dark area in the left panel, with some brighter areas within it.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <infiltrative>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_279,88,"In the left panel, a T1 post-contrast image shows a mass with a somewhat irregular shape. In the right panel, the corresponding T1 enhancement map highlights the area of contrast uptake. The mass appears to have a rim of enhancement surrounding a central area that is less bright.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_280,85,"In the left panel, a T1 post-contrast image shows a somewhat ill-defined, irregular mass with a central area that appears slightly darker than the surrounding tissue. The right panel is a subtraction image, highlighting areas of contrast uptake. The tumour region shows patchy enhancement, with some areas appearing slightly brighter than the background, but not forming a distinct ring or nodule.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: mild
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_281,86,"In the left panel, a T1 post-contrast image, there is a region of abnormal signal intensity. In the right panel, a subtraction map, this region appears as a bright area, indicating contrast uptake. This bright area is irregular in shape and appears to be surrounded by a darker area.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <mild>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_282,67,"In the LEFT panel, a roughly circular lesion is visible, appearing slightly darker than the surrounding brain tissue. The RIGHT panel shows the same lesion, with a bright rim surrounding a darker central area. This bright rim indicates contrast uptake, characteristic of enhancement.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_283,114,"In the LEFT panel, a roughly circular lesion is visible, appearing slightly darker than the surrounding brain tissue. In the RIGHT panel, the same lesion shows a rim of enhancement, which is brighter than the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_284,90,"In the LEFT panel, a large, round, dark lesion is visible, likely representing a brain tumour. The RIGHT panel shows the same region, highlighting the contrast uptake within the lesion. The lesion appears as a bright area, indicating enhancement.
+
+FINAL ANSWER:
+Enhancement: <avid>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <high>
+Assessment: <low-grade>"
+BraTS20_Training_285,91,"In the left axial T1 post-contrast image, a large, roughly circular lesion is visible. The lesion appears dark, suggesting low signal intensity on T1-weighted images, and has a relatively well-defined border. In the right T1ce minus T1 enhancement map, the lesion shows a rim of enhancement, which is brighter than the surrounding normal brain tissue. This enhancement pattern is described as avid.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_286,91,"In the left axial T1 post-contrast image, there is a region of abnormal signal intensity, appearing slightly darker than the surrounding brain tissue. In the right T1ce minus T1 enhancement map, this region shows a rim of enhancement, appearing brighter than the background brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_287,96,"In the left panel, a T1 post-contrast image shows a large, irregular mass with a central area that appears darker, possibly representing necrosis. The right panel is a subtraction map highlighting areas of contrast uptake. The tumour region shows significant enhancement, appearing much brighter than the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_288,43,"In the left panel, a T1 post-contrast image shows a mass with a central dark area and a surrounding rim of enhancement. In the right panel, the contrast map highlights the area of enhancement, showing a bright rim around the central dark area. This indicates that the mass is enhancing.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_289,87,"In the left axial T1 post-contrast image, a roughly circular mass is visible, appearing dark centrally and slightly brighter peripherally. The right image is a subtraction map showing the contrast uptake relative to normal brain tissue. The tumour region appears as a bright area, indicating contrast uptake, with a relatively clear rim of enhancement surrounding a darker central component.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_290,86,"In the left panel, a T1 post-contrast image shows a region of abnormal signal intensity, likely representing a lesion. The right panel is a subtraction map highlighting areas of contrast uptake, showing a similar region with increased signal intensity compared to the surrounding brain.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_291,87,"In the left panel, a T1 post-contrast image shows a mass with a central dark area and a surrounding rim of enhancement. In the right panel, the T1ce minus T1 enhancement map highlights the area of enhancement, showing a bright rim around the central dark area. This indicates a contrast-enhancing lesion.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_292,50,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing slightly brighter than the surrounding brain tissue. The right image is a subtraction map showing the contrast enhancement, where the lesion appears as a ring of increased signal intensity around a darker central area.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_293,85,"In the LEFT panel, a large, irregularly shaped mass is visible, predominantly dark grey, with some lighter grey areas. In the RIGHT panel, the same mass is shown, but the enhancement is subtracted. The enhancing tissue appears as a bright rim around the dark core of the mass, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_294,49,"In the left panel, a T1 post-contrast image shows a large, irregular mass centered in the brain. The right panel is a subtraction image, highlighting the areas where the tumor has taken up contrast. The tumor appears as a bright, somewhat ring-shaped region surrounding a darker, less enhanced core.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_295,119,"In the left axial T1 post-contrast image, a lesion is visible in the right frontal lobe. In the right T1ce minus T1 enhancement map, the lesion appears as a bright area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_296,61,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing slightly darker than the surrounding brain tissue. In the right T1ce minus T1 enhancement map, the lesion shows a rim of enhancement, which is brighter than the surrounding brain tissue. This enhancement is patchy and irregular, with a central area that appears less enhanced or possibly necrotic.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: infiltrative
+MassEffect: mild
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_297,86,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing darker than the surrounding brain tissue. The right T1ce minus T1 enhancement map shows the same lesion with a bright rim, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_298,76,"In the left axial T1 post-contrast image, a lesion is visible in the left frontal lobe. In the right T1ce minus T1 enhancement map, the lesion shows some enhancement, particularly around the periphery.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_299,86,"In the left panel, a T1 post-contrast image shows a well-defined, irregular mass with a central dark area. In the right panel, a T1ce minus T1 enhancement map highlights the tumour region, which appears as a bright rim surrounding a darker core, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_300,98,"In the LEFT panel, a single, roughly oval-shaped lesion is visible within the white matter. The LEFT panel is a T1 post-contrast image, showing the lesion as a bright area, with a surrounding darker area representing the normal brain tissue. In the RIGHT panel, the enhancement map highlights the area of the lesion that has taken up contrast, showing it as a bright region compared to the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_301,98,"In the left axial T1 post-contrast image, there is a large, irregular lesion centered in the brain, with a dark, necrotic core. The surrounding area shows significant enhancement, forming a ring-like pattern around the necrotic center. The right image is a subtraction map showing the enhancement difference between the T1ce and T1 images. The enhancing rim appears bright, indicating avid contrast uptake, while the necrotic core is dark.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_302,64,"In the LEFT panel, a T1 post-contrast image shows a roughly circular lesion with a central dark area and a surrounding rim of enhancement. In the RIGHT panel, the enhancement map highlights the same lesion, showing a bright rim surrounding a darker central area. This indicates that the lesion is enhancing, likely representing a glioma.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_303,110,"In the left panel, a dark, irregular region is visible, likely representing a lesion within the brain parenchyma. The right panel shows a corresponding region, but it is brighter than the surrounding normal brain tissue, indicating contrast uptake. This brighter area is irregular and has a somewhat ring-like appearance, particularly around its periphery.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_304,52,"In the left panel, a T1 post-contrast image, there is a region of abnormal signal intensity, appearing slightly darker than the surrounding brain tissue. In the right panel, a T1ce minus T1 enhancement map, this region shows some increased signal intensity compared to the normal brain, appearing as a patchy area.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_305,91,"In the LEFT panel, a T1 post-contrast image shows a dark, irregular lesion located in the left frontal lobe. The RIGHT panel is a subtraction map highlighting areas of contrast uptake. The lesion appears as a dark, irregular area on the LEFT panel, surrounded by a rim of enhancement on the RIGHT panel.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_306,101,"In the left axial T1 post-contrast image, there is a roughly circular, dark lesion located in the left frontal lobe. The right axial T1ce minus T1 enhancement map shows the same lesion, with a bright rim surrounding a darker central area. This bright rim indicates contrast uptake, characteristic of enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_307,70,"In the left panel, a large, irregularly shaped lesion is visible, predominantly dark grey, with some areas appearing slightly lighter. The right panel shows the same region, highlighting the contrast uptake. The lesion appears as a bright, somewhat ring-like area surrounding a darker central portion.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_308,89,"In the LEFT panel, a T1 post-contrast image, there is a region of abnormal signal intensity, appearing slightly brighter than the surrounding brain tissue. In the RIGHT panel, the corresponding T1 enhancement map shows this region as having increased signal intensity, appearing brighter than the grey level of normal brain.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_309,62,"In the left axial T1 post-contrast image, a mass is visible in the left temporal lobe. In the right T1ce minus T1 enhancement map, the mass shows patchy areas of enhancement, with some regions appearing slightly brighter than the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_310,71,"In the left panel, a T1 post-contrast image, there is a large, irregular mass centered in the image. The mass appears dark on the T1 image, indicating low signal intensity. The right panel is a subtraction image showing the enhancement pattern. The enhancing rim around the mass is relatively bright compared to the surrounding brain tissue, suggesting some level of vascularity and breakdown of the blood-brain barrier.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_311,113,"In the left panel, a dark, irregular region is visible, likely representing a lesion within the brain parenchyma. The right panel shows a corresponding area with increased signal intensity, indicating contrast uptake by the lesion. This pattern is consistent with a glioma.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_312,93,"In the left panel, a roughly circular lesion is visible, appearing darker than the surrounding brain tissue. The right panel shows the same region, highlighting the contrast uptake. The lesion appears as a bright, ring-like structure surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_313,102,"In the LEFT panel, a roughly circular, dark lesion is visible, surrounded by a lighter, slightly irregular rim. The RIGHT panel shows the same lesion, with the enhancing rim appearing as a bright, ring-like structure around a darker central area.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_314,89,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, appearing slightly brighter than the surrounding brain tissue. The RIGHT panel is a subtraction map highlighting areas of contrast uptake, showing the same region as slightly brighter than the background brain tissue.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_315,107,"In the left panel, a dark, non-enhancing lesion is visible. In the right panel, the same lesion appears as a bright area, indicating contrast uptake. This suggests the lesion is enhancing.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_316,91,"In the LEFT panel, a T1 post-contrast image, there is a region of abnormal signal intensity, likely representing a lesion. The RIGHT panel is a subtraction map showing the enhancement pattern relative to normal brain tissue. The lesion appears to have some enhancement, but it is not strongly bright.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_317,76,"In the left axial T1 post-contrast image, a dark, irregular lesion is visible within the brain parenchyma. The right T1ce minus T1 enhancement map shows the same lesion with a rim of enhancement surrounding a central dark area.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: infiltrative
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_318,85,"In the left axial T1 post-contrast image, a large, roughly oval-shaped lesion is visible, appearing dark grey. The right image is a subtraction map showing the enhancement pattern. The lesion demonstrates a relatively thick, bright rim of enhancement surrounding a darker central area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_319,77,"In the LEFT panel, a large, dark lesion is visible, appearing as a hypointense area on the T1 post-contrast image. The RIGHT panel shows the same region, with a map indicating contrast uptake. The lesion appears as a bright area, suggesting contrast enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_320,92,"In the left panel, a roughly circular lesion is visible, appearing darker than the surrounding brain tissue. The right panel shows the same lesion, with a bright rim surrounding a darker central area, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_321,115,"In the left panel, a dark, irregular lesion is visible within the brain parenchyma. In the right panel, the enhancement map shows the lesion as a region of increased signal intensity, particularly around the periphery, contrasting with the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <infiltrative>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_322,54,"In the left axial T1 post-contrast image, a large, irregular, and predominantly dark lesion is visible, partially obscuring the adjacent brain parenchyma. The right T1ce minus T1 enhancement map highlights the areas of contrast uptake. The lesion appears as a region of increased signal intensity, particularly around the periphery, suggesting enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_323,64,"FINDINGS: The left panel shows a T1 post-contrast image of a brain lesion. The right panel is a subtraction image showing the enhancement pattern of the lesion. The lesion appears as a large, somewhat irregular, dark area on the T1 image, with a surrounding rim of enhancement on the subtraction image.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <mild>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_324,62,"In the left panel, a T1 post-contrast image, there is a region of abnormal signal intensity, appearing darker than the surrounding brain tissue. In the right panel, a subtraction map, this region shows a rim of enhancement, appearing brighter than the normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_325,31,"In the LEFT panel, a roughly circular lesion is visible, appearing slightly darker than the surrounding brain tissue. In the RIGHT panel, the same lesion shows a rim of enhancement, which is brighter than the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_326,92,"In the left axial T1 post-contrast image, a dark, well-defined lesion is visible, surrounded by normal brain tissue. The right image is a T1ce minus T1 enhancement map, showing the same lesion as a dark area, indicating no contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_327,80,"FINDINGS: The left panel shows a T1 post-contrast axial image of a brain lesion. The right panel is a subtraction image, highlighting the contrast uptake within the lesion compared to the surrounding brain tissue. The lesion appears as a roughly circular mass with a central area that is darker than the surrounding brain. The enhancing rim is relatively thick and irregular.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_328,89,"In the left panel, a T1 post-contrast image, there is a lesion visible. In the right panel, an enhancement map, the lesion shows some contrast uptake, but it is not uniformly bright.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_329,61,"In the left axial T1 post-contrast image, a large, irregular mass is visible, predominantly dark grey, with some areas appearing slightly lighter. In the right T1ce minus T1 enhancement map, the mass shows patchy areas of increased signal intensity, particularly around the periphery, which are brighter than the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_330,62,"The LEFT panel shows a T1 post-contrast image of a brain lesion. The RIGHT panel is a subtraction map highlighting the contrast uptake, with brighter areas indicating increased vascularity compared to the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_331,55,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, likely representing a mass. The RIGHT panel is a subtraction map highlighting areas of contrast uptake, showing a rim of enhancement surrounding the abnormal region.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_332,111,"In the LEFT panel, a T1 post-contrast image, there is a region of abnormal signal intensity, appearing slightly brighter than the surrounding brain tissue. The RIGHT panel shows a subtraction map, highlighting areas of contrast uptake. The abnormal region in the LEFT panel appears as a slightly brighter area in the RIGHT panel, indicating some contrast uptake.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_333,85,"In the LEFT panel, a T1 post-contrast image shows a roughly circular lesion with a dark central area and a surrounding rim of slightly brighter tissue. In the RIGHT panel, a subtraction map highlights the contrast uptake. The enhancing rim appears as a bright region, while the central dark area remains dark, indicating contrast was not taken up.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_334,66,"In the LEFT panel, a roughly oval-shaped lesion is visible, appearing as a bright area compared to the surrounding grey matter. In the RIGHT panel, the same lesion is shown, but the enhancement is subtracted from the T1 signal. The lesion appears as a bright area, but the surrounding brain tissue is darker.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_335,67,"In the left axial T1 post-contrast image, a mass is visible, appearing as a somewhat irregular, predominantly dark lesion with some brighter areas. In the right T1ce minus T1 enhancement map, the mass shows a rim of enhancement, which is brighter than the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_336,90,"In the left panel, a T1 post-contrast image shows a large, well-defined, roundish mass with a dark central region. In the right panel, the corresponding T1 enhancement map highlights the area of contrast uptake. The enhancing rim surrounding the dark centre is clearly brighter than the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_337,85,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing as a slightly brighter area compared to the surrounding brain tissue. In the right T1ce minus T1 enhancement map, the lesion shows a distinct rim of enhancement, appearing significantly brighter than the normal brain tissue, with a relatively dark central area.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_338,81,"In the left axial T1 post-contrast image, a large, irregularly shaped mass is visible within the left temporal lobe. The mass appears predominantly dark grey, suggesting low signal intensity on T1-weighted images. In the right T1ce minus T1 enhancement map, the mass shows patchy areas of increased signal intensity, particularly around the periphery, indicating contrast uptake. This pattern is consistent with mild enhancement.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_339,85,"In the left panel, a T1 post-contrast axial image shows a large, irregular mass centered in the brain. The mass has a dark, necrotic core surrounded by a rim of enhancing tissue. In the right panel, the T1ce minus T1 enhancement map highlights the areas of contrast uptake. The enhancing rim around the necrotic core is clearly brighter than the surrounding normal brain tissue, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_340,94,"In the LEFT panel, a T1 post-contrast image shows a mass with a somewhat irregular shape. The RIGHT panel is a subtraction map highlighting areas of contrast uptake. The mass appears to have a rim of enhancement, suggesting it is not completely non-vascularized.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: mild
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_341,59,"In the LEFT panel, a T1 post-contrast image shows a dark, roughly circular lesion in the brain parenchyma. In the RIGHT panel, a T1ce minus T1 enhancement map highlights the lesion, showing a bright rim surrounding a darker central area. This pattern suggests contrast uptake by the lesion.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_342,90,"In the left axial T1 post-contrast image, a lesion is visible in the right frontal lobe. In the right T1ce minus T1 enhancement map, the lesion appears as a region of increased signal intensity compared to the surrounding normal brain tissue, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_343,66,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular mass with a dark central core. In the RIGHT panel, a T1ce minus T1 enhancement map highlights the tumour region, which appears as a bright rim surrounding the dark central core. This indicates that the tumour is actively taking up contrast, suggesting vascularity.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_344,71,"In the left axial T1 post-contrast image, there is a roughly circular lesion with a central dark area and a surrounding rim of enhancement. The right image is a subtraction map showing the enhancement difference from normal brain tissue. The enhancing rim appears bright white, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_345,92,"In the left panel, a T1 post-contrast image, there is a well-defined, roughly oval-shaped lesion located in the left frontal lobe. The lesion appears dark on the T1 image, indicating low signal intensity. In the right panel, the T1 enhancement map shows the same lesion with a bright rim surrounding a darker central area. This bright rim represents areas of increased contrast uptake, characteristic of vascularized tumour tissue.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <present>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_346,91,"In the LEFT panel, a T1 post-contrast image, there is a well-defined, roughly oval-shaped lesion located in the left temporal lobe. The lesion appears dark grey, suggesting low signal intensity on the T1-weighted image. The RIGHT panel is a subtraction map showing the enhancement pattern. The lesion exhibits a clear rim of enhancement, appearing significantly brighter than the surrounding normal brain tissue, which is represented by the grey level of normal brain. This pattern is characteristic of avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_347,100,"In the left panel, a T1 post-contrast axial image shows a large, irregular mass with a dark central area. In the right panel, the corresponding T1ce minus T1 enhancement map highlights the tumour region, showing a rim of enhancement surrounding the dark central area.
+
+FINAL ANSWER:
+Enhancement: <avid>
+Necrosis: <present>
+Margin: <infiltrative>
+MassEffect: <marked>
+EnhancementMapSignal: <high>
+Assessment: <high-grade>"
+BraTS20_Training_348,87,"In the LEFT panel, a T1 post-contrast image shows a region of abnormal signal intensity, likely representing a brain tumour. In the RIGHT panel, a subtraction map highlights the areas of contrast uptake relative to the surrounding brain tissue. The tumour appears as a bright region on the enhancement map, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_349,87,"In the left panel, a large, roughly oval-shaped lesion is visible, appearing dark grey. The right panel shows the same lesion, with a bright rim surrounding a darker central area. This bright rim indicates contrast uptake, characteristic of enhancement.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_350,87,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing predominantly hypointense on the T1 sequence. In the right T1ce minus T1 enhancement map, the lesion shows significant contrast uptake, forming a bright rim around a darker central area. This pattern is characteristic of avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_351,70,"In the left panel, a T1 post-contrast image, there is a region of abnormal signal intensity, appearing slightly darker than the surrounding brain tissue. The right panel shows a map of contrast enhancement, where brighter areas indicate increased vascularity compared to normal brain. The tumour region in the right panel appears as a slightly brighter area compared to the grey level of normal brain, suggesting some degree of enhancement.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_352,98,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing slightly darker than the surrounding brain tissue. In the right T1ce minus T1 enhancement map, the lesion shows a rim of enhancement, which is brighter than the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_353,50,"In the LEFT panel, a T1 post-contrast image, there is a well-defined, roughly circular lesion with a dark central core and a surrounding rim of enhancement. In the RIGHT panel, the T1ce minus T1 enhancement map shows the same lesion, with the enhancing rim appearing as a bright region compared to the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_354,68,"In the left panel, a T1 post-contrast image shows a large, irregular mass centered in the brain. The mass has a dark, necrotic core surrounded by a rim of enhancement. In the right panel, the T1ce minus T1 enhancement map highlights the area of enhancement. The enhancing rim appears bright, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_355,104,"In the left panel, a T1 post-contrast image shows a large, irregular mass centered in the brain. The mass has a dark, necrotic core surrounded by a rim of enhancement. In the right panel, the T1ce minus T1 enhancement map highlights the area of enhancement, showing a bright rim around the dark core.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_356,71,"In the left panel, a T1 post-contrast axial image shows a lesion with a dark central core and a surrounding enhancing rim. In the right panel, the enhancement map highlights the same lesion, showing a bright rim corresponding to the enhancing tissue.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_357,83,"In the LEFT panel, a T1 post-contrast image, there is a well-defined, roughly oval-shaped lesion. The lesion appears slightly hyperintense compared to the surrounding brain tissue on the T1 image. In the RIGHT panel, the corresponding T1 enhancement map shows the lesion as a bright area, indicating contrast uptake. The enhancement appears mostly ring-shaped around a darker central area.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_358,65,"In the left axial T1 post-contrast image, a roughly circular lesion is visible in the right frontal lobe. The lesion appears as a slightly hypointense area compared to the surrounding brain tissue on the T1 image. In the right T1ce minus T1 enhancement map, the lesion shows a distinct rim of enhancement, which is brighter than the surrounding brain tissue. This enhancement pattern is characteristic of a ring-enhancing lesion.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_359,83,"In the LEFT panel, a large, irregular mass is visible, predominantly dark grey, suggesting necrosis or cystic changes. The RIGHT panel shows the contrast enhancement map, where the tumour region appears as a bright, somewhat ring-shaped area, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_360,101,"In the left axial T1 post-contrast image, a large, irregular mass is visible, appearing dark grey. In the right T1ce minus T1 enhancement map, the mass shows patchy areas of increased signal intensity, particularly around the periphery, which are brighter than the surrounding normal brain tissue.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_361,91,"In the left panel, a T1 post-contrast image, there is a large, irregular, dark lesion present. In the right panel, a T1ce minus T1 enhancement map, the lesion appears as a bright area, indicating contrast uptake. This bright area is irregular and extends into the surrounding brain tissue.
+
+FINAL ANSWER:
+Enhancement: <mild>
+Necrosis: <absent>
+Margin: <infiltrative>
+MassEffect: <mild>
+EnhancementMapSignal: <intermediate>
+Assessment: <low-grade>"
+BraTS20_Training_362,71,"In the left axial T1 post-contrast image, a roughly circular lesion is visible, appearing darker than the surrounding brain tissue. In the right T1ce minus T1 enhancement map, the lesion shows a rim of enhancement, which is brighter than the surrounding brain tissue. This enhancement is relatively uniform around the periphery of the lesion.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_363,82,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly circular mass with a central dark area. In the RIGHT panel, the corresponding T1ce minus T1 enhancement map highlights the tumour region, which appears as a bright rim surrounding a darker core. This pattern indicates avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_364,55,"In the LEFT panel, a large, irregularly shaped lesion is visible, appearing dark grey. The RIGHT panel shows the same lesion, with a bright rim surrounding a darker central area. This bright rim indicates contrast uptake, characteristic of enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: present
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: high
+Assessment: high-grade"
+BraTS20_Training_365,88,"In the left panel, a T1 post-contrast image shows a well-defined, roughly circular mass centered in the brain. The mass has a dark, hypointense core and a surrounding rim of enhancement. In the right panel, the T1ce minus T1 enhancement map highlights the area of enhancement. The enhancing rim appears bright, indicating avid enhancement.
+
+FINAL ANSWER:
+Enhancement: avid
+Necrosis: absent
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: high
+Assessment: low-grade"
+BraTS20_Training_366,87,"In the LEFT panel, a T1 post-contrast image shows a well-defined, roughly oval-shaped lesion with a dark central core. In the RIGHT panel, a T1ce minus T1 enhancement map highlights the lesion, showing a rim of enhancement surrounding the dark central core. This enhancement is patchy and not uniformly ring-shaped.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_367,70,"In the left panel, a large, irregularly shaped lesion is visible, predominantly located in the right frontal lobe. The lesion appears mostly hypointense on the T1 post-contrast image, with some areas showing slight hyperintensity. The right panel displays the contrast enhancement map, where the lesion shows patchy areas of hyperintensity, indicating contrast uptake.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: absent
+Margin: infiltrative
+MassEffect: marked
+EnhancementMapSignal: intermediate
+Assessment: low-grade"
+BraTS20_Training_368,89,"In the LEFT panel, a T1 post-contrast image, a lesion is visible. In the RIGHT panel, a subtraction map showing contrast enhancement, the lesion appears as a bright area.
+
+FINAL ANSWER:
+Enhancement: <none>
+Necrosis: <absent>
+Margin: <well-defined>
+MassEffect: <none>
+EnhancementMapSignal: <low>
+Assessment: <low-grade>"
+BraTS20_Training_369,98,"In the left panel, an axial T1 post-contrast image shows a well-defined, roughly circular lesion with a dark central core. The right panel is a subtraction image, highlighting the contrast uptake within the lesion. The lesion appears to have a relatively bright rim, suggesting some enhancement.
+
+FINAL ANSWER:
+Enhancement: mild
+Necrosis: present
+Margin: well-defined
+MassEffect: none
+EnhancementMapSignal: intermediate
+Assessment: low-grade"

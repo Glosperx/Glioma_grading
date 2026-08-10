@@ -1,0 +1,32 @@
+# conda env create -f environment.yml && conda activate glioma
+#
+# Mirrors requirements.txt. MedSAM2 stays a pip git dependency and is needed only by notebook 1;
+# notebooks 2 to 6 run from data_cache/ with nothing else.
+#
+# On macOS, xgboost must be imported before torch: both ship an OpenMP runtime, and with torch
+# first xgboost segfaults at fit time rather than at import. src/_openmp.py enforces the order.
+name: glioma
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=1.24
+  - pandas>=2.0
+  - scipy>=1.10
+  - scikit-learn>=1.3
+  - py-xgboost>=2.0
+  - matplotlib>=3.7
+  - pillow>=10.0
+  - tqdm>=4.65
+  - jupyter>=1.0
+  - pip
+  - pip:
+      - shap>=0.44
+      - torch>=2.1
+      - torchvision>=0.16
+      - transformers>=4.40
+      - accelerate>=0.28
+      - open-clip-torch>=2.24
+      - huggingface-hub>=0.23
+      # Uncomment for notebook 1, the segmentation fine-tune.
+      # - git+https://github.com/bowang-lab/MedSAM2.git
