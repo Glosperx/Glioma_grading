@@ -23,13 +23,23 @@ HIGH_GRADE_COLOR, LOW_GRADE_COLOR = BLUE, ORANGE
 
 #: Enhancing is warm, the necrotic core takes the dark colour, edema the third.
 SUB_COLORS = {"ET": ORANGE, "NCR": BLUE, "ED": AQUA}
-SUB_LABELS = {"ET": "Enhancing (ET)", "NCR": "Necrotic core (NCR)", "ED": "Edema (ED)"}
+SUB_LABELS = {"ET": "Enhancing (ET)", "NCR": "Necrotic core (NCR)", "ED": "Oedema (ED)"}
 
 #: Sequential, colour-vision-deficiency-safe, for the enhancement heat map.
 ENHANCEMENT_CMAP = "cividis"
 
 #: Agreement map colours: overlap, missed, predicted beyond the reference.
 OVERLAP_COLOR, MISSED_COLOR, EXTRA_COLOR = AQUA, BLUE, ORANGE
+
+#: Feature labels as fig:shap prints them.
+FEATURE_DISPLAY_NAMES = {
+    "V_WT": "V_whole", "V_ET": "V_enhancing", "V_NCR": "V_necrosis", "V_ED": "V_edema",
+    "ET_frac": "enhancing_frac", "NCR_frac": "necrosis_frac", "ED_frac": "edema_frac",
+    "ET_core_frac": "enhancing_core_frac", "T1ce_WT": "T1ce_mean_whole",
+    "T1ce_ET": "T1ce_mean_ET", "T1ce_NCR": "T1ce_mean_NCR", "enh_WT": "enh_mean_whole",
+    "enh_ET": "enh_mean_ET", "FLAIR_WT": "FLAIR_mean_whole", "FLAIR_ED": "FLAIR_mean_ED",
+    "enh_ratio_ET": "T1ce_enhancement_ratio", "edema_ratio": "FLAIR_edema_ratio",
+}
 
 
 def set_style():

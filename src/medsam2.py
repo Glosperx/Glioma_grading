@@ -13,6 +13,12 @@ Two inputs are compared, and the paper reports both as equivalent:
 The channel set decides the checkpoint and output directory, so the two runs cannot overwrite
 each other.
 
+The masks every downstream table reads come from a five-fold cross-fit of the FLAIR input on the
+grading folds themselves (``data_cache/folds.csv``): the masks of fold k are predicted by a model
+fine-tuned on the other four folds for twelve epochs, and the final-epoch weights are kept with no
+checkpoint selection. No case is therefore graded from a mask predicted by a model that saw it.
+The three-channel input was compared on a single 80/20 case split and was not cross-fitted.
+
 Volumes are stored already normalized -- clipped to their 1st and 99th percentiles and scaled
 to 8-bit. ``normalization_proof`` shows this rather than assuming it, because applying the same
 transform a second time would shift voxels and break comparability with the input the published
@@ -41,13 +47,15 @@ LEARNING_RATE = 1e-4
 WEIGHT_DECAY = 1e-4
 GRAD_CLIP = 1.0
 BBOX_MARGIN = 10               # pixels of slack around the reference bounding box
-EPOCHS = 6
+EPOCHS = 6                     # the single-split runs that compare the two inputs
+CROSSFIT_EPOCHS = 12           # per fold of the cross-fit, final-epoch weights kept
 VOLUME_SHAPE = (155, 240, 240)
 
 IMAGENET_MEAN = (0.485, 0.456, 0.406)
 IMAGENET_STD = (0.229, 0.224, 0.225)
 
 CHANNEL_SETS = {"flair": ["flair"], "multichannel": ["flair", "t1ce", "t2"]}
+CROSSFIT_CHANNELS = CHANNEL_SETS["flair"]
 
 
 def pick_device():
@@ -75,7 +83,12 @@ def hyperparameters():
         ("trainable", "mask decoder, prompt encoder, image encoder neck"),
         ("frozen", "the pretrained backbone"),
         ("slices per case", f"{SLICES_PER_CASE}, tumor-bearing, uniform along the axial axis"),
-        ("split", f"case level, {int((1 - VAL_RATIO) * 100)}/{int(VAL_RATIO * 100)}, seed 42"),
+        ("cross-fit", "the five grading folds (stratified, shuffled, seed 42); fold k is "
+                      "segmented by a model fine-tuned on the other four"),
+        ("cross-fit epochs", f"{CROSSFIT_EPOCHS} per fold, final-epoch weights, "
+                             "no checkpoint selection, seed 42 + k"),
+        ("input comparison split", f"case level, {int((1 - VAL_RATIO) * 100)}/"
+                                   f"{int(VAL_RATIO * 100)}, seed 42, best validation epoch"),
         ("batch size", BATCH_SIZE),
         ("optimizer", f"AdamW, lr {LEARNING_RATE}, weight decay {WEIGHT_DECAY}"),
         ("schedule", "cosine annealing over the epochs"),
@@ -83,7 +96,7 @@ def hyperparameters():
         ("loss", "half Dice, half binary cross-entropy"),
         ("prompt", f"reference bounding box with a {BBOX_MARGIN} px margin"),
         ("augmentation", "random horizontal flip, box mirrored with it"),
-        ("epochs", EPOCHS),
+        ("input comparison epochs", EPOCHS),
     ]
     return pd.DataFrame(rows, columns=["setting", "value"]).set_index("setting")
 
@@ -419,23 +432,156 @@ def segment_all(channels, checkpoint_path=None, seg_out=None, device=None, force
         out_path = seg_out / f"{npz_path.stem}_seg.npy"
         if out_path.exists() and not force:
             continue
-        data = np.load(str(npz_path), allow_pickle=True)
-        has_reference = "seg" in data.files
-        references = (data["seg"] > 0) if has_reference else None
-        depth, height, width = data[channels[0]].shape
-        predicted = np.zeros((depth, height, width), dtype=np.uint8)
-        for i in range(depth):
-            # Without a reference mask there is no box to prompt with, so the whole frame is
-            # used. Only the one case that carries no reference takes this path.
-            box = (bbox_from_mask(references[i]) if has_reference else [0, 0, width, height])
-            if box is None:
-                continue
-            predictor.set_image(build_rgb_slice(data, channels, i))
-            with torch.no_grad():
-                masks, _, _ = predictor.predict(box=np.array([box]), multimask_output=False)
-            predicted[i] = masks[0].astype(np.uint8)
-        np.save(str(out_path), predicted)
+        np.save(str(out_path), predict_case(predictor, npz_path, channels))
     return seg_out
+
+
+def predict_case(predictor, npz_path, channels):
+    """One case, slice by slice, box-prompted, stacked back into a volume."""
+    data = np.load(str(npz_path), allow_pickle=True)
+    has_reference = "seg" in data.files
+    references = (data["seg"] > 0) if has_reference else None
+    depth, height, width = data[channels[0]].shape
+    predicted = np.zeros((depth, height, width), dtype=np.uint8)
+    for i in range(depth):
+        # Without a reference mask there is no box to prompt with, so the whole frame is
+        # used. Only the one case that carries no reference takes this path.
+        box = (bbox_from_mask(references[i]) if has_reference else [0, 0, width, height])
+        if box is None:
+            continue
+        predictor.set_image(build_rgb_slice(data, channels, i))
+        with torch.no_grad():
+            masks, _, _ = predictor.predict(box=np.array([box]), multimask_output=False)
+        predicted[i] = masks[0].astype(np.uint8)
+    return predicted
+
+
+# ---------------------------------------------------------------------------
+# Cross-fit: the masks the downstream tables read
+# ---------------------------------------------------------------------------
+def set_seeds(seed):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.backends.mps.is_available():
+        torch.mps.manual_seed(seed)
+
+
+def crossfit_files(k):
+    """(training volumes, test volumes) of fold k, from the shipped fold file."""
+    from .cohort import load_folds
+
+    folds = load_folds()
+    train = [config.NPZ_DIR / f"{c}.npz" for c in folds.case_id[folds.fold != k]]
+    test = [config.NPZ_DIR / f"{c}.npz" for c in folds.case_id[folds.fold == k]]
+    assert not {p.stem for p in train} & {p.stem for p in test}
+    return train, test
+
+
+def crossfit_checkpoint(k, data_root=None):
+    return (data_root or config.DATA_ROOT) / f"medsam2_crossfit_fold{k}.pt"
+
+
+def slice_dice(model, npz_files, channels, device):
+    """Mean slice-level Dice at decoder resolution, the same measure as the validation Dice."""
+    loader = DataLoader(BraTSSliceDataset(preload(npz_files, channels, "Preload test fold"),
+                                          augment=False),
+                        batch_size=BATCH_SIZE, shuffle=False, num_workers=0)
+    model.eval()
+    total = 0.0
+    with torch.no_grad():
+        for images, gts, boxes in tqdm(loader, desc="Test-fold slice Dice"):
+            images, gts, boxes = images.to(device), gts.to(device), boxes.to(device)
+            total += dice_coeff(forward_pass(model, images, boxes), gts)
+    return total / len(loader), len(loader.dataset)
+
+
+def fine_tune_fold(k, epochs=CROSSFIT_EPOCHS, channels=CROSSFIT_CHANNELS, device=None,
+                   checkpoint_path=None):
+    """Fine-tune on the four folds other than k and keep the final-epoch weights.
+
+    There is no validation split and no checkpoint selection, so nothing about fold k is seen
+    before its masks are predicted. Fold k is scored once afterwards at slice level, for
+    reporting only; that is the per-slice Dice the paper quotes as 0.86.
+    """
+    device = pick_device() if device is None else device
+    checkpoint_path = checkpoint_path or crossfit_checkpoint(k)
+    train_files, test_files = crossfit_files(k)
+    set_seeds(42 + k)
+    print(f"fold {k} | {len(train_files)} training cases, {len(test_files)} test cases | "
+          f"channels {channels} | epochs {epochs} | device {device}")
+
+    loader = DataLoader(BraTSSliceDataset(preload(train_files, channels, f"Preload fold {k}"),
+                                          augment=True),
+                        batch_size=BATCH_SIZE, shuffle=True, num_workers=0)
+    model = build_model("train", device)
+    optimizer, scheduler = freeze_and_optimise(model, epochs)
+    criterion = DiceBCELoss().to(device)
+
+    history = {"loss": [], "train Dice": [], "minutes": []}
+    for epoch in range(1, epochs + 1):
+        started = time.time()
+        model.train()
+        epoch_loss = epoch_dice = 0.0
+        for images, gts, boxes in tqdm(loader, desc=f"Fold {k} train {epoch}/{epochs}"):
+            images, gts, boxes = images.to(device), gts.to(device), boxes.to(device)
+            optimizer.zero_grad()
+            low_res = forward_pass(model, images, boxes)
+            loss = criterion(low_res, gts)
+            loss.backward()
+            torch.nn.utils.clip_grad_norm_(
+                [p for p in model.parameters() if p.requires_grad], GRAD_CLIP)
+            optimizer.step()
+            epoch_loss += loss.item()
+            epoch_dice += dice_coeff(low_res, gts)
+        scheduler.step()
+        history["loss"].append(epoch_loss / len(loader))
+        history["train Dice"].append(epoch_dice / len(loader))
+        history["minutes"].append((time.time() - started) / 60)
+        print(f"fold {k} epoch {epoch:>2} | loss {history['loss'][-1]:.4f} | "
+              f"train Dice {history['train Dice'][-1]:.4f}")
+
+    checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
+    torch.save(model.state_dict(), str(checkpoint_path))
+    test_dice, n_slices = slice_dice(model, test_files, channels, device)
+    print(f"fold {k}: final-epoch weights saved; test-fold slice Dice {test_dice:.4f} "
+          f"over {n_slices} slices")
+    return pd.DataFrame(history, index=range(1, epochs + 1)), test_dice
+
+
+def segment_fold(k, channels=CROSSFIT_CHANNELS, checkpoint_path=None, seg_out=None,
+                 device=None, force=False):
+    """Masks for the cases of fold k only, from the model that did not see them.
+
+    A mask already on disk is kept unless ``force=True``, so a run can resume. Re-running the
+    cross-fit into a directory that already holds masks would therefore keep the old ones.
+    """
+    device = pick_device() if device is None else device
+    checkpoint_path = checkpoint_path or crossfit_checkpoint(k)
+    seg_out = seg_out or config.SEG_DIR
+    seg_out.mkdir(parents=True, exist_ok=True)
+    if not checkpoint_path.exists():
+        raise FileNotFoundError(f"no checkpoint at {checkpoint_path}; run fine_tune_fold({k})")
+    model = build_model("eval", device)
+    model.load_state_dict(torch.load(str(checkpoint_path), map_location=str(device)))
+    model.eval()
+
+    from sam2.sam2_image_predictor import SAM2ImagePredictor
+    predictor = SAM2ImagePredictor(model)
+    _, test_files = crossfit_files(k)
+    for npz_path in tqdm(test_files, desc=f"Segmenting fold {k}"):
+        out_path = seg_out / f"{npz_path.stem}_seg.npy"
+        if out_path.exists() and not force:
+            continue
+        np.save(str(out_path), predict_case(predictor, npz_path, channels))
+    return seg_out
+
+
+def crossfit_summary():
+    """The shipped record of the five fine-tunes, with the mean the paper quotes."""
+    table = pd.read_csv(config.CROSSFIT_TRAINING).set_index("fold")
+    table.loc["mean"] = table.mean()
+    return table.round({"test_slice_dice": 4, "final_train_dice": 4, "train_minutes": 1})
 
 
 def check_masks(seg_out, expected_shape=VOLUME_SHAPE):

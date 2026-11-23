@@ -12,7 +12,9 @@ EPS = 1e-6
 
 #: Feature order for every design matrix in the study. Four volumes, four sub-region
 #: fractions of the tumor volume, then mean intensities on T1ce, on the enhancement map
-#: and on FLAIR, the last two normalized by healthy tissue.
+#: and on FLAIR, the last two divided by the mean intensity outside the predicted tumor.
+#: That mean is taken over the whole volume outside the tumor, background included, and not
+#: over the healthy-brain reference the thresholds use (see ``features``).
 FEATURE_NAMES = [
     "V_WT", "V_ET", "V_NCR", "V_ED",
     "ET_frac", "NCR_frac", "ED_frac", "ET_core_frac",
@@ -28,7 +30,7 @@ FEATURE_GROUPS = {
     "sub-region fraction": ["ET_frac", "NCR_frac", "ED_frac", "ET_core_frac"],
     "mean intensity": ["T1ce_WT", "T1ce_ET", "T1ce_NCR", "enh_WT", "enh_ET",
                        "FLAIR_WT", "FLAIR_ED"],
-    "normalized by healthy tissue": ["enh_ratio_ET", "edema_ratio"],
+    "divided by the mean outside the tumor": ["enh_ratio_ET", "edema_ratio"],
 }
 
 
@@ -90,6 +92,11 @@ def features(ET, NCR, ED, WT, t1ce, t1, flair):
 
     Voxel counts stand in for volumes: BraTS is resampled to an isotropic 1 mm grid, so a
     count is a volume in cubic millimetres up to a constant the classifiers absorb.
+
+    The two ratio features divide by the mean over everything outside the tumor mask, which
+    includes the empty background around the skull-stripped brain (most of those voxels).
+    This differs from ``healthy_reference``, which drops the background with ``flair > 10``.
+    The published features were computed this way, so the definition is kept as it is.
     """
     healthy = ~WT
     mean_healthy_t1ce = mean_in(t1ce, healthy) + EPS

@@ -8,7 +8,8 @@ import pandas as pd
 from sklearn.metrics import roc_auc_score
 
 from . import cohort, stats
-from .evaluation import (CLASSIFIERS, PRIMARY_MODEL, evaluate, out_of_fold, wide_classifiers)
+from .evaluation import (CLASSIFIERS, PRIMARY_MODEL, REPEAT_SEEDS, evaluate, out_of_fold,
+                         seeded_cv, wide_classifiers)
 
 DASH = "---"
 
@@ -20,7 +21,7 @@ def _rounded_delta(auc, auc_baseline, decimals=DECIMALS):
     """Difference between two AUCs as the paper states it.
 
     tab:errcorr and tab:matrix both define their difference column against the *printed*
-    baseline ("the standalone AUC minus the volumetric baseline of 0.930"), so the subtraction
+    baseline ("the standalone AUC minus the volumetric baseline of 0.925"), so the subtraction
     happens after rounding and the column always agrees with the two AUCs beside it. tab:abl
     is the exception: it subtracts at full precision and rounds afterwards. Following each
     table's own definition is what makes the reproduction exact.
@@ -46,6 +47,14 @@ FEATURE_SETS = [
     ("$+$ BiomedCLIP (enhancement)", ["volumetric", "biomedclip_enh"]),
     ("$+$ MedGemma $+$ BiomedCLIP (T1ce)",
      ["volumetric", "medgemma", "biomedclip_t1ce"]),
+    ("$+$ MedGemma (few-shot) $+$ BiomedCLIP (enhancement)",
+     ["volumetric", "medgemma_fewshot", "biomedclip_enh"]),
+]
+
+#: The fusion rows the paper pairs with their mean over the repeated cross-validation.
+REPEATED_FEATURE_SETS = [
+    ("$+$ MedGemma", ["volumetric", "medgemma"]),
+    ("$+$ MedGemma (few-shot)", ["volumetric", "medgemma_fewshot"]),
     ("$+$ MedGemma (few-shot) $+$ BiomedCLIP (enhancement)",
      ["volumetric", "medgemma_fewshot", "biomedclip_enh"]),
 ]
@@ -198,7 +207,37 @@ def table_matrix(blocks, y, feature_sets=None, baseline_keys=("volumetric",), de
             "AUC": stats.round_half_up(auc, DECIMALS),
             "$\\Delta$ vs. Volumetric": f"{delta:+.{decimals}f}",
             "95\\% CI": stats.format_ci(bs, decimals=decimals),
-            "P($\\Delta > 0$)": stats.round_half_up(bs["p_positive"], 3),
+            "P($\\Delta > 0$)": stats.round_half_up(bs["p_positive"], decimals),
+        })
+    return pd.DataFrame(rows).set_index("Feature set")
+
+
+def table_repeated_cv(blocks, y, feature_sets=None, baseline_keys=("volumetric",),
+                      seeds=REPEAT_SEEDS):
+    """The fusion rows re-scored over five fold assignments.
+
+    Each seed reshuffles which cases share a fold; the forest, the PCA and the bootstrap seeds
+    stay as they are. Every difference is taken against the volumetric baseline of the *same*
+    seed, at full precision, so the mean is a mean of paired differences. Seed 42 is the single
+    run tab:matrix reports, which makes it possible to see where that run sits among the five.
+    """
+    feature_sets = feature_sets or REPEATED_FEATURE_SETS
+    base = {s: roc_auc_score(y, out_of_fold(blocks, list(baseline_keys), y, cv=seeded_cv(s)))
+            for s in seeds}
+    rows = [{"Feature set": "Volumetric features",
+             **{f"AUC, seed {s}": round(base[s], 4) for s in seeds},
+             "mean AUC": round(float(np.mean(list(base.values()))), 4)}]
+    for label, keys in feature_sets:
+        auc = {s: roc_auc_score(y, out_of_fold(blocks, keys, y, cv=seeded_cv(s))) for s in seeds}
+        delta = np.array([auc[s] - base[s] for s in seeds])
+        rows.append({
+            "Feature set": label,
+            **{f"AUC, seed {s}": round(auc[s], 4) for s in seeds},
+            "mean AUC": round(float(np.mean(list(auc.values()))), 4),
+            "mean $\\Delta$": f"{stats.round_half_up(delta.mean(), 4):+.4f}",
+            "min $\\Delta$": f"{stats.round_half_up(delta.min(), 4):+.4f}",
+            "max $\\Delta$": f"{stats.round_half_up(delta.max(), 4):+.4f}",
+            "seeds with $\\Delta > 0$": f"{int((delta > 0).sum())}/{len(seeds)}",
         })
     return pd.DataFrame(rows).set_index("Feature set")
 
@@ -245,3 +284,23 @@ def compare_to_paper(table, column, expected, tolerance=0.001):
     check["difference"] = (check["computed"] - check["paper"]).round(4)
     check["match"] = check["difference"].abs() <= tolerance
     return check
+
+
+def check_printed(table, expected):
+    """Compare cells as the paper prints them, character for character.
+
+    ``expected`` maps a row label to ``{column: printed value}``. A number is rendered with
+    three decimals, and with an explicit sign when the printed value carries one, so +0.010
+    and 0.010 are not confused.
+    """
+    rows = []
+    for row, columns in expected.items():
+        for column, paper in columns.items():
+            value = table.loc[row, column]
+            if isinstance(value, (float, np.floating)):
+                computed = (f"{value:+.3f}" if str(paper)[:1] in "+-" else f"{value:.3f}")
+            else:
+                computed = str(value)
+            rows.append({"row": row, "column": column, "computed": computed,
+                         "paper": paper, "match": computed == paper})
+    return pd.DataFrame(rows).set_index(["row", "column"])

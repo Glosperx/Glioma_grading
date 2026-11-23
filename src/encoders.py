@@ -194,12 +194,25 @@ def build_panels(t1ce, t1, flair, WT, panel_size=PANEL_SIZE):
 # ---------------------------------------------------------------------------
 # MedGemma: the four prompt formulations
 # ---------------------------------------------------------------------------
-PANEL_DESCRIPTION = (
+# The panel description as first submitted called the enhancement map's normal brain mid-grey.
+# With ENHANCEMENT_WINDOW = (-2, 6), normal brain (z = 0) is drawn at a quarter of the grey
+# range, so normal brain and the empty background are dark grey on the panel the model sees.
+# The numeric, few-shot and reasoning prompts correct that one clause and change nothing else;
+# the baseline prompt never contained it.
+SUBMISSION_CLAUSE = ("windowed so that mid-grey is normal brain and bright means true contrast "
+                     "uptake above normal tissue")
+CORRECTED_CLAUSE = ("windowed so that normal brain and the empty background appear dark grey "
+                    "and anything lighter means true contrast uptake above normal tissue")
+SUBMISSION_PANEL_DESCRIPTION = (
     "You are an expert neuroradiologist grading a glioma on brain MRI. "
     "The LEFT panel is an axial T1 post-contrast (T1ce) crop centred on the tumour. "
     "The RIGHT panel is the T1ce minus T1 enhancement map for the same region, windowed so that "
     "mid-grey is normal brain and bright means true contrast uptake above normal tissue. "
 )
+assert SUBMISSION_PANEL_DESCRIPTION.count(SUBMISSION_CLAUSE) == 1
+PANEL_DESCRIPTION = SUBMISSION_PANEL_DESCRIPTION.replace(SUBMISSION_CLAUSE, CORRECTED_CLAUSE)
+assert PANEL_DESCRIPTION.count(SUBMISSION_CLAUSE) == 0
+assert PANEL_DESCRIPTION.count(CORRECTED_CLAUSE) == 1
 
 CATEGORICAL_FIELDS = (
     "Enhancement: <none|mild|avid>\n"
@@ -421,15 +434,19 @@ def run_medgemma(which="fewshot", limit=None, answers_path=None, hidden_path=Non
 # ---------------------------------------------------------------------------
 # MedGemma: what the answers themselves say
 # ---------------------------------------------------------------------------
-def parse_answers(path):
+def parse_answers(path, marker=None):
     """The saved answers as a table, one column per field.
 
     The model often echoes the template's angle brackets, so "<none>" and "none" arrive as
     different strings for the same answer and have to be normalized before anything is counted.
+    With ``marker`` set, only the text after it is read, which for the reasoning prompt is the
+    six-field conclusion and not the reasoning before it.
     """
     frame = pd.read_csv(path)
     parsed = []
     for answer in frame["answer"].astype(str):
+        if marker:
+            answer = answer.split(marker)[-1] if marker in answer else ""
         fields = {}
         for line in answer.splitlines():
             if ": " not in line:
@@ -440,12 +457,32 @@ def parse_answers(path):
     return pd.DataFrame(parsed, index=frame["case_id"])
 
 
-def answer_distribution(path, field="Enhancement", top=4):
+def answer_distribution(path, field="Enhancement", top=4, marker=None):
     """How often each value of one field is answered, which is how saturation shows up."""
-    table = parse_answers(path)
+    table = parse_answers(path, marker=marker)
     if field not in table.columns:
         return pd.Series(dtype=int)
     return table[field].value_counts().head(top)
+
+
+def single_field_aucs(path, cases, y):
+    """For the numeric prompt: how well each answered percentage grades on its own.
+
+    A higher value is read as high-grade, and the AUC is reported as max(AUC, 1 - AUC), so a
+    field is credited whichever direction it happens to point. Values near 0.5 mean the
+    literal answer carries no grade information even where the hidden state does.
+    """
+    from sklearn.metrics import roc_auc_score
+
+    values = parse_answers(path).reindex(list(cases)).apply(pd.to_numeric, errors="coerce")
+    rows = []
+    for field in values.columns:
+        column = values[field].fillna(values[field].median()).to_numpy(dtype=np.float32)
+        auc = roc_auc_score(y, -column)
+        rows.append({"Field": field, "Single-field AUC": round(float(max(auc, 1 - auc)), 3),
+                     "Distinct values": int(len(np.unique(column))),
+                     "Unparsed answers": int(values[field].isna().sum())})
+    return pd.DataFrame(rows).set_index("Field")
 
 
 # ---------------------------------------------------------------------------

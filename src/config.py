@@ -25,7 +25,7 @@ CACHE_DIR = Path(os.environ.get("GLIOMA_CACHE_DIR", REPO_ROOT / "data_cache"))
 # BraTS working copy
 # ---------------------------------------------------------------------------
 NPZ_DIR = DATA_ROOT / "brats_npz_all"      # one .npz per case: flair, t1, t1ce, t2, seg
-SEG_DIR = DATA_ROOT / "brats_seg_ft"       # predicted whole-tumor masks, {case}_seg.npy
+SEG_DIR = DATA_ROOT / "brats_seg_cf"       # cross-fitted whole-tumor masks, {case}_seg.npy
 SEG_MC_DIR = DATA_ROOT / "brats_seg_mc"    # masks from the three-channel fine-tune
 META_DIR = DATA_ROOT / "brats_meta"        # name_mapping.csv carries the HGG/LGG grade
 
@@ -54,6 +54,8 @@ MEDGEMMA_ANSWERS = {
 MEDGEMMA_NATIVE_CONF = CACHE_DIR / "medgemma_native_conf.npz"
 
 COHORT_LABELS = CACHE_DIR / "cohort_labels.csv"     # fallback grades, case_id,grade
+FOLDS = CACHE_DIR / "folds.csv"                     # case_id,grade,fold: grading = cross-fit folds
+CROSSFIT_TRAINING = CACHE_DIR / "crossfit_training.csv"   # per-fold fine-tune summary
 
 FIGURE_DIR = Path(os.environ.get("GLIOMA_FIGURE_DIR", REPO_ROOT / "figures"))
 
@@ -71,7 +73,7 @@ def describe() -> str:
     rows = [
         ("DATA_ROOT", DATA_ROOT, DATA_ROOT.exists()),
         ("  brats_npz_all", NPZ_DIR, NPZ_DIR.exists()),
-        ("  brats_seg_ft", SEG_DIR, SEG_DIR.exists()),
+        ("  brats_seg_cf", SEG_DIR, SEG_DIR.exists()),
         ("  brats_meta", META_DIR, META_DIR.exists()),
         ("CACHE_DIR", CACHE_DIR, CACHE_DIR.exists()),
     ]

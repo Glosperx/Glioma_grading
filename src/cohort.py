@@ -8,9 +8,14 @@ Three cohorts appear in the paper and all three are correct. They must not be ha
     n = 368   predicted versus ground-truth sub-regions (tab:abl) -- same cause, the
               comparison needs a ground-truth mask on both sides
 
-A fourth cohort, n = 367, appears only as a wiring proof. An earlier run of this pipeline
-lost one case to an unreadable copy of its ``.npz`` and silently skipped it; reproducing that
-cohort shows the protocol is unchanged, and the corrected cohort is what the paper reports.
+A fourth cohort, n = 367, appears only as a wiring proof on the ground-truth arm of tab:abl.
+An earlier run of this pipeline lost one case to an unreadable copy of its ``.npz`` and silently
+skipped it; reproducing that cohort shows the protocol is unchanged, and the corrected cohort is
+what the paper reports.
+
+The five grading folds are also the folds of the segmentation cross-fit: the masks of every
+fold were predicted by a MedSAM2 fine-tuned on the other four. ``check_folds`` asserts that the
+shipped fold file and the grading cross-validation agree case by case.
 """
 import numpy as np
 import pandas as pd
@@ -58,6 +63,32 @@ def load_grade_labels():
 def encode_grades(grade_map, cases):
     """Label vector in the order of ``cases``: 0 high-grade, 1 low-grade."""
     return np.array([0 if grade_map[c] == HIGH_GRADE else 1 for c in cases])
+
+
+# ---------------------------------------------------------------------------
+# Folds shared by the segmentation cross-fit and the grading cross-validation
+# ---------------------------------------------------------------------------
+def load_folds():
+    """``case_id, grade, fold`` for the 369 cases, in sorted case order."""
+    return pd.read_csv(config.FOLDS)
+
+
+def check_folds(cases, y):
+    """Assert that the fold of every case is the test fold the grading CV puts it in.
+
+    The cross-fitted masks are only out of sample for the grading folds if the two fold
+    assignments are the same, so this is checked rather than assumed.
+    """
+    from .evaluation import CV
+
+    folds = load_folds()
+    assert folds["case_id"].tolist() == list(cases), "fold file and cohort differ in order"
+    assert (folds["grade"].map({HIGH_GRADE: 0, LOW_GRADE: 1}).to_numpy() == y).all()
+    fold = np.full(len(cases), -1)
+    for k, (_, test) in enumerate(CV.split(np.zeros((len(y), 1)), y)):
+        fold[test] = k
+    assert (fold == folds["fold"].to_numpy()).all(), "fold file disagrees with the grading CV"
+    return folds
 
 
 # ---------------------------------------------------------------------------

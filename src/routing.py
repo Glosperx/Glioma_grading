@@ -1,9 +1,11 @@
 """The per-case routing experiment (paper Section 4.5, the negative result).
 
 Concatenation lets the classifier weigh the two views globally. The alternative is per case:
-send a case to MedGemma's own grade when the model is confident, and to the volumetric
-classifier otherwise. This module builds those routers and the diagnostic that explains why
-none of them works.
+hand a share of the cases to a classifier over MedGemma's hidden state and leave the rest to the
+volumetric classifier, with a label-free gate deciding which cases are handed over. The main gate
+is MedGemma's own softmax confidence in the grade token it wrote; the cases it is most confident
+on go to the embedding classifier. This module builds those routers and the diagnostic that
+explains why none of them works.
 
 The order matters. A router can only help if some label-free signal separates the cases where
 deferring *rescues* the volumetric classifier from the cases where it *breaks* it. That
@@ -138,9 +140,9 @@ def flip_separation(y, p_base, threshold_base, p_other, threshold_other, signals
     router can change. The target is whether the base view is wrong there. A signal that could
     drive a router scores far from 0.5; at 0.5 it carries no routing information at all.
 
-    One signal scores well and is useless: the volumetric probability itself. Rescuable and
-    breakable are *defined* by whether the volumetric view is wrong, which that probability
-    sets, so it is circular, and routing on it collapses onto the majority grade.
+    One signal is useless however far from 0.5 it scores: the volumetric probability itself.
+    Rescuable and breakable are *defined* by whether the volumetric view is wrong, which that
+    probability sets, so it is circular, and routing on it collapses onto the majority grade.
     """
     predicted_base = (p_base >= threshold_base).astype(int)
     predicted_other = (p_other >= threshold_other).astype(int)

@@ -31,8 +31,13 @@ from .stats import round_half_up
 
 SEED = 42
 
-#: The one cross-validation object every table is scored with.
+#: The one cross-validation object every table is scored with. Its folds are also the folds of
+#: the segmentation cross-fit (``data_cache/folds.csv``).
 CV = StratifiedKFold(5, shuffle=True, random_state=SEED)
+
+#: Fold assignments of the repeated cross-validation. Seed 42 is the single run every other
+#: table reports; the other four only reshuffle which cases share a fold.
+REPEAT_SEEDS = (42, 1, 2, 3, 4)
 
 #: Components each foundation-model embedding is reduced to, fit inside the folds.
 EMBED_PCA_DIM = 16
@@ -59,6 +64,11 @@ CLASSIFIERS = {
 PRIMARY_MODEL = "Random forest"
 
 SCORING = ["accuracy", "precision", "recall", "f1", "roc_auc"]
+
+
+def seeded_cv(seed):
+    """The protocol's cross-validation with another fold assignment, for the repeated runs."""
+    return StratifiedKFold(5, shuffle=True, random_state=seed)
 
 
 def make_xgboost(y_train):
