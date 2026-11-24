@@ -10,6 +10,9 @@ xgboost>=2.0
 tqdm>=4.65
 jupyter>=1.0
 
+# Converting the BraTS2020 NIfTI files, prepare_brats.py.
+nibabel>=5.0
+
 # Figures, notebook 7: fig:segmentation, fig:subregions and fig:shap.
 matplotlib>=3.7
 shap>=0.44
